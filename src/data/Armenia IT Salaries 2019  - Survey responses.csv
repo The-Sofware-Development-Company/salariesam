@@ -1,0 +1,633 @@
+Date,Company,Position,Salary,Years of experience
+4/15/2019 14:54:09,International IT Company,IT Project Manager,"700,000",
+4/15/2019 14:54:55,,Team Leader,"2,500,000",
+4/15/2019 14:55:12,,DevOps,"1,450,000",
+4/15/2019 14:55:30,,Junior Java Developer,"600,000",
+4/15/2019 14:56:39,,Senior Software Engineer,"1,100,000",
+4/15/2019 14:58:37,,Senior Software Engineer,"1,300,000",
+4/15/2019 15:04:58,,Somebody who does everything,"320,000",
+4/15/2019 15:05:56,,Software engineer,"1,100,000",
+4/15/2019 15:07:52,,Product Manager,"600,000",
+4/15/2019 15:18:22,,UI/UX Designer,"1,200,000",
+4/15/2019 15:20:49,,iOS developer,"550,000",
+4/15/2019 15:22:17,IT/media startup,Global operations director,"1,200,000",
+4/15/2019 15:36:55,Simply Technologies,Software Developer,"830,000",
+4/15/2019 15:42:01,Vineti,Senior DevOps Engineer,"800,000",
+4/15/2019 16:01:18,,Product Owner,"700,000",
+4/15/2019 16:01:33,VMware Armenia,Member of Technical Staff 3,"1,600,000",
+4/15/2019 17:47:18,SFL,Software Engineer ,"800,000",
+4/15/2019 17:48:04,SFL,System Engineer/DevOps,"1,250,000",
+4/15/2019 17:49:23,,Senior DBA,"1,650,000",
+4/15/2019 17:51:13,,Developer,"550,000",
+4/15/2019 17:53:25,,Web Designer,"950,000",
+4/15/2019 17:56:25,,"Software Developer (C++, Image Processing)","380,000",
+4/15/2019 17:57:21,,Senior Android Developer,"1,500,000",
+4/15/2019 18:00:54,Jazva,Solution Architect,"2,450,000",
+4/15/2019 18:01:53,,Software Engineer,"800,000",
+4/15/2019 18:04:27,,PHP Web Developer,"180,000",
+4/15/2019 18:05:01,,Product Manager,"1,400,000",
+4/15/2019 18:56:43,Webb Fontaine,Java Software Engineer Middle 2,"600,000",
+4/15/2019 18:59:24,WebbFontaine,Java Software Engineer Middle 1,"400,000",
+4/15/2019 19:05:14,Epam,Java developer,"500,000",
+4/15/2019 19:06:49,It company,Junior android developer,"350,000",
+4/15/2019 19:13:32,Rocket Systems LLC,Full Stack Developer,"120,000",
+4/15/2019 19:17:19,"Global Life Partners, Inc. ",Android developer,"340,000",
+4/15/2019 19:20:13,ss,DB,"500,000",
+4/15/2019 19:24:42,,Software engineer,"350,000",
+4/15/2019 19:27:39,,Android Developer,"160,000",
+4/15/2019 19:32:28,Multiple places,System Administrator,"700,000",
+4/15/2019 19:38:32,,Data Scientist,"280,000",
+4/15/2019 19:52:13,Energize Global Services,Junior Java Developer,"144,000",
+4/15/2019 19:56:44,,Java Developer,"120,000",
+4/15/2019 20:03:32,Snark Ai,Software Developer,"980,000",
+4/15/2019 20:11:22,,Junior data analyst,"120,000",
+4/15/2019 20:13:29,EGS,Android developer,"500,000",
+4/15/2019 20:32:22,Evoca Bank,Junior Developer,"120,000",
+4/15/2019 20:41:00,Iguan Systems,Junior Software developer,"150,000",
+4/15/2019 20:44:48,,Senior full stack engineer,"1,300,000",
+4/15/2019 20:54:15,OMD,C++ engineer,"860,000",
+4/15/2019 20:54:50,Fimetech,ML engineer,"75,000",
+4/15/2019 20:55:09,Fimetech,ML engineer,"120,000",
+4/15/2019 21:27:20,,Android developer,"100,000",
+4/15/2019 21:27:34,,Web Developer,"100,000",
+4/15/2019 21:27:53,MNM media,Android developer,"536,000",
+4/15/2019 21:34:40,,PR specialist ,"290,000",
+4/15/2019 21:50:21,,Developer,"550,000",
+4/15/2019 21:50:33,ՇՏՊՔ ՊՈԱԿ,IT assistant professor,"95,000",
+4/15/2019 21:55:26,,Android,"900,000",
+4/15/2019 22:02:45,,Android,"140,000",
+4/15/2019 22:21:26,IUNetworks,QA Engineer,"850,000",9
+4/15/2019 22:23:35,EPAM Systems,Senior Software Engineer ,"1,200,000",6
+4/15/2019 22:23:41,,.net developer,"150,000",1.5
+4/15/2019 22:30:01,,Developer,"1,600,000",12
+4/15/2019 22:59:22,,Junior QA engineer,"220,000",1.5
+4/15/2019 23:41:24,,Senior System Administrator,"1,800,000",15
+4/15/2019 23:59:40,,javascript developer,"150,000",0
+4/16/2019 0:03:08,,Mobile developer,"610,000",3
+4/16/2019 0:10:53,,Frontend developer,"400,000",1
+4/16/2019 0:44:45,,Frontend Developer ,"900,000",5
+4/16/2019 1:23:45,,Java Developer,"400,000",2.5
+4/16/2019 7:25:51,,Android Developer,"600,000",3.5
+4/16/2019 8:36:21,,Product Manager ,"900,000",6
+4/16/2019 9:49:59,Startup company,Android developer,"250,000",1
+4/16/2019 12:14:12,Joomag,UI/UX Designer,"380,000",2.7
+4/16/2019 14:08:19,,Android developer,"300,000",2.5
+4/16/2019 14:30:42,Beeline,System Administrator,"400,000",7
+4/16/2019 14:34:54,Jetbrains,Scala Plugin Intern,"1,300,000",5
+4/16/2019 17:59:55,Startup,Tech Lead,"1,500,000",8
+4/16/2019 22:01:00,Realizeit,Junior Android Developer,"100,000",0.5
+4/16/2019 22:35:39,,Senior QA Engineer ,"900,000",7
+4/16/2019 23:01:13,Renderforest LLC,Illustrator,"320,000",3
+4/16/2019 23:05:05,Betconstruct,Software Engineer,"900,000",4
+4/16/2019 23:36:03,Synopsis,QA Engineer,"500,000",2
+4/17/2019 1:33:48,,Database developer,"1,500,000",23
+4/17/2019 2:03:46,,QA,"600,000",5.5
+4/17/2019 8:08:42,BetConstruct,Manual QA engineer,"280,000",1
+4/17/2019 10:03:48,,Senior QA,"700,000",5
+4/17/2019 10:15:59,,Project Manager,"550,000",2
+4/17/2019 10:31:40,,Junior Automation Engineer,"120,000",0
+4/17/2019 10:33:46,,Junior QA Specialist,"170,000",1
+4/17/2019 10:33:58,,Manual QA Engineer,"535,000",8
+4/17/2019 10:35:16,,QA Automation Engineer,"650,000",2.5
+4/17/2019 10:38:17,,QA Engineer,"1,300,000",4.5
+4/17/2019 10:48:29,,Manual QA,"250,000",2
+4/17/2019 10:59:31,,QA,"200,000",3
+4/17/2019 11:00:43,,QA Engineer,"450,000",3.5
+4/17/2019 11:07:08,Click2Sure,QA Engineer,"200,000",2
+4/17/2019 11:22:40,Armenian branch of a New York based company,QA Engineer,"500,000",3.5
+4/17/2019 11:25:11,360stories,Manual QA & Tester of VR systems,"150,000",0.4
+4/17/2019 11:30:06,PicsArt,Junior QA,"370,000",3
+4/17/2019 11:34:04,,QA engineer,"700,000",7
+4/17/2019 11:38:36,,Manual QA engineer,"600,000",3
+4/17/2019 11:57:50,,Software Automation QA engineer,"850,000",4
+4/17/2019 12:00:48,,Junior Manual QA,"350,000",1.5
+4/17/2019 12:11:23,,QA,"300,000",2.5
+4/17/2019 12:17:11,,QA,"250,000",2
+4/17/2019 12:18:23,,QA Engineer 2,"850,000",3
+4/17/2019 12:22:49,,QA Intern,"750,000",0.5
+4/17/2019 12:36:30,AppearMe,QA Specialist,"150,000",0
+4/17/2019 12:37:52,,Manual QA,"365,000",5
+4/17/2019 12:45:19,HayComp,Web Developer,"500,000",3
+4/17/2019 12:54:20,web company,QA,"150,000",2
+4/17/2019 14:00:15,,QA Engineer,"500,000",2
+4/17/2019 14:08:21,Digitain,Sport Analyst ,"300,000",5
+4/17/2019 14:43:18,,QA Engineer,"300,000",2
+4/17/2019 15:30:17,,Senior QA,"950,000",7
+4/17/2019 15:54:02,Armenia ,QA Manager,"1,800,000",19
+4/17/2019 16:52:34,,QA Engineer,"300,000",2
+4/17/2019 18:00:01,Synopsys,HW Release Engineer II,"399,000",8
+4/17/2019 18:06:02,,Software Testing Engineer,"500,000",1
+4/17/2019 19:50:48,,QA Engineer,"300,000",1
+4/17/2019 22:03:35,STDev Armenia,QA specialist,"170,000",1.5
+4/17/2019 22:04:18,STDev Armenia,QA Specialist,"170,000",0.5
+4/17/2019 22:27:02,STDev,Manual QA Engineer,"100,000",0.5
+4/17/2019 23:16:56,Synergy,Junior Software Engineer,"160,000",0.5
+4/17/2019 23:31:51,,Senior QA Engineer,"750,000",7
+4/17/2019 23:55:29,All.me,Manual Qa team lead,"350,000",3
+4/18/2019 8:51:46,,QA Team Lead ,"1,200,000",9
+4/18/2019 9:07:54,Picsart,Senior QA,"555,000",7
+4/18/2019 10:14:39,,Senior Developer,"1,100,000",5
+4/18/2019 15:56:14,VMware,Staff Engineer,"2,000,000",10
+4/18/2019 19:18:46,,QA Engineer,"380,000",4
+4/18/2019 23:24:28,Picsart,Base/mid Backend Developer,"400,000",2.7
+4/18/2019 10:14:39,,Senior developer,"1,100,000",5
+4/18/2019 13:31:29,Dom Daniel,.,"840,000",12
+4/18/2019 15:56:14,VMware,Staff Engineer,"2,000,000",10
+4/18/2019 19:18:46,,QA engineer,"380,000",4
+4/18/2019 23:24:28,Picsart,Base/mid backend dev,"400,000",2.7
+4/19/2019 12:21:58,M&M,Junior Ios Developer,"1,200,000",1
+4/19/2019 13:05:30,,Senior Software Engineer,"1,300,000",7
+4/19/2019 13:26:51,,Product Owner,"800,000",5
+4/19/2019 13:52:08,All.me,Manual QA Team Lead,"550,000",4
+4/19/2019 20:00:30,,Front-End Developer,"300,000",2
+4/19/2019 22:35:56,IU Networks,Senior Java Developer,"1,300,000",10
+4/19/2019 22:37:09,IU Networks,Team Lead,"1,500,000",14
+4/20/2019 0:10:58,EGS,Team Lead,"1,800,000",11
+4/20/2019 14:06:40,Instigate,Software Engineer,"56,000",1
+4/20/2019 15:00:49,       ,Senior QA Engineer,"750,000",11
+4/20/2019 16:13:12,,Senior System Administrator,"150,000",1
+4/20/2019 17:04:18,Union of Advanced Technology Enterprises,Robotics Instructor,"50,000",2
+4/21/2019 0:36:46,EPAM,Senior Front End Developer,"1,200,000",7
+4/21/2019 1:39:54,,Middle Front-End Developer,"350,000",1.8
+4/21/2019 3:33:53,Byblosbank Armenia ,IT Support Officer ,"190,000",1.5
+4/21/2019 9:49:00,,Project Manager,"850,000",10
+4/21/2019 9:54:40,Test,Senior developer,"700,000",10
+4/21/2019 10:20:00,,Manual QA Engineer,"100,000",1
+4/21/2019 10:41:11,,Junior QA,"185,000",1.5
+4/21/2019 18:05:48,US based IT company,Data Scientist,"1,200,000",5
+4/22/2019 14:02:14,STDev,Junior Backend Developer (Python),"150,000",1.5
+4/22/2019 16:42:13,XXX,CEO,"200,000",8
+4/22/2019 16:45:46,Renderforest,Software Engineer,"700,000",2.5
+4/22/2019 17:15:38,Renderforest,UI UX Designer,"714,000",4
+4/22/2019 23:14:16,,Backend Developer,"350,000",1
+4/23/2019 10:57:40,Synopsys,Engineer Sr. I,"800,000",6
+4/23/2019 12:23:44,US based Armenian company,Android developer,"450,000",2.5
+4/23/2019 12:24:12,,Android developer,"700,000",3.5
+4/26/2019 18:44:48,Energize Global Services,Junior Developer,"500,000",2
+4/26/2019 18:44:48,Energize Global Services,Mid-level Developer,"800,000",2
+4/26/2019 19:14:48,StDev,Junior Js devloper,"150,000",0.2
+4/27/2019 12:31:09,EPAM,Front End Developer,"800,000",4
+4/27/2019 21:12:07,,Senior Database Administratior,"1,450,000",17
+4/28/2019 22:02:34,Synopsys,R&D Engineer,"660,000",10
+5/1/2019 11:41:38,,Business analyst / project manager,"334,000",2
+5/1/2019 11:50:47,IUNetworks,Senior Java Developer,"1,500,000",12
+5/1/2019 14:35:32,,Frontend Developer,"110,000",4
+5/1/2019 14:55:15,,Solution Architect,"1,500,000",10
+5/2/2019 10:05:17,Where I should not work for this salary) ,Product Owner,"350,000",5
+5/2/2019 15:23:35,WF,Developer,"300,000",2
+5/3/2019 10:25:36,SFL,Project Manager,"600,000",2
+5/5/2019 14:37:29,,Frontend developer,"415,000",3
+5/5/2019 14:39:31,ST-Dev,Backend Developer (Python),"150,000",0
+5/6/2019 1:46:47,VMware,Member of Technical Staff 3,"1,400,000",5
+5/6/2019 1:48:06,VMware,Member of Technical Staff 3,"1,100,000",5
+5/6/2019 13:17:02,,QA,"115,000",1
+5/6/2019 19:48:53,BetConstruct,.NET developer,"1,100,000",4
+5/6/2019 19:49:16,Dom Daniel,.NET engineer,"1,200,000",5
+5/6/2019 19:50:10,BlueNet,Android engineer,"250,000",2
+5/6/2019 23:05:14,Instigate,Software engineer ,"300,000",4
+5/7/2019 21:49:27,,Programmer,"400,000",4
+5/8/2019 4:37:33,Pornhub,Data Analyst,"6,500,000",8
+5/8/2019 10:59:39,Public school,"Teacher, Operator","46,000",16
+5/8/2019 11:14:21,Low Cost company,System Administrator,"230,000",0.8
+5/8/2019 12:59:08,Greatergood Europe,Software Engineer,"2,700,000",10
+5/8/2019 14:42:51,Ayotech,Laravel Developer,"350,000",2
+5/8/2019 14:43:57,,ML engineer part time,"200,000",0.5
+5/8/2019 14:46:36,AyoTach,Magento developer,"420,000",2.5
+5/8/2019 14:55:48,,Product owner,"750,000",4.5
+5/8/2019 15:20:46,Parisian Surch Factory,Accountant,"300,000",3
+5/9/2019 22:04:20,YEA Engineering,Systems Engineer,"600,000",2
+5/10/2019 12:27:28,,Mid-level Software Developer,"400,000",4
+5/14/2019 14:11:21,,Senior IT Consultant ,"1,500,000",3
+5/14/2019 18:25:39,,QA Engineering Lead,"2,100,000",13
+5/14/2019 19:17:57,,QA engineer,"250,000",0.8
+5/14/2019 20:52:34,,Mid-level Back End Engineer,"576,000",2.5
+5/15/2019 15:55:48,Riot Games ,Senior Data Analyst ,"1,650,000",5
+5/15/2019 16:04:12,,Junior Data Analyst,"800,000",1
+5/16/2019 18:16:38,,Manual QA,"70,000",0
+5/16/2019 21:29:22,IUNetworks,Senior Java Developer,"1,400,000",8
+5/17/2019 17:22:20,STDev,Project Manager ,"350,000",3
+5/18/2019 15:41:24,Armsoft,Software Developer,"90,000",0
+5/23/2019 15:23:35,,Junior PHP Full Stack developer,"220,000",0.4
+5/23/2019 22:41:53,Synopsys,R&D engineer 1,"320,000",1
+5/26/2019 17:51:19,,Software Engineer,"388,000",8
+5/27/2019 10:51:03,Webb Fontaine,Product owner (PO),"900,000",5
+5/29/2019 16:51:33,,Senior QA Automation Engineer,"750,000",4.5
+5/29/2019 18:34:21,Digitain,Tech Writer,"200,000",2
+5/29/2019 18:34:48,Digitain,Product Owner,"350,000",5
+5/29/2019 18:35:19,Disqo,Tech Writer,"750,000",7
+5/29/2019 18:35:41,OMD,Technical Support ,"1,000,000",15
+5/30/2019 0:47:02,Freelance,Software Developer,"2,000,000",12
+5/30/2019 10:55:46,HelpSystems,Senior QA,"1,500,000",8
+5/30/2019 17:37:46,Synopsys,Sr2 QA,"1,500,000",8
+6/1/2019 14:30:17,,Network Administrator,"400,000",4
+6/3/2019 20:30:28,STDev Armenia,Backend Developer,"400,000",2
+6/8/2019 13:35:28,Where I should not work for this salary as well :),Technical Product Owner,"300,000",2
+6/13/2019 11:37:34,Epam Armenia,Java developer L2,"550,000",5
+6/15/2019 20:26:28,RA Government,System Administrator,"975,000",3
+6/18/2019 17:13:19,IUnetworks ,Java Engineer,"950,000",6
+6/21/2019 8:32:13,,HR Assistant ,"150,000",1
+6/21/2019 16:36:27,,Junior Node.js Developer,"200,000",1
+6/22/2019 10:00:33,Ameriabank,Loan officer,"132,000",2
+6/22/2019 13:41:50,,UI/UX designer,"400,000",3.6
+6/22/2019 16:33:48,EGS,Business Analyst,"1,000,000",2
+6/22/2019 16:34:10,Telcell,Project Manager,"700,000",4
+6/22/2019 16:40:38,YerevanResto.am,Project Manager,"250,000",2
+6/23/2019 4:44:26,Simply Technologies,Software Engineer,"500,000",3
+6/23/2019 5:04:28,,Middle Fullstack node ,"350,000",2
+6/25/2019 18:35:22,,Java intern,"110,000",0.4
+6/26/2019 18:30:24,,Frontend Developer,"400,000",2
+6/28/2019 8:53:04,,Backend deveveloper (php/laravel),"600,000",2
+6/29/2019 3:18:59,,Research Engineer,"900,000",4
+6/29/2019 3:20:17,Armenian Startup,Senior Software Engineer,"2,400,000",6
+7/3/2019 13:47:24,Startup,Android Developer ,"500,000",3
+7/6/2019 15:04:53,Webb Fontaine,Java Developer Intern,"120,000",1
+7/14/2019 13:22:05,,Product Owner,"1,300,000",6
+7/21/2019 23:56:15,MerSoft,Frontend Developer,"220,000",1
+7/22/2019 11:07:55,,Android Developer,"600,000",2.1
+7/23/2019 16:23:48,Digitain,QA,"200,000",1
+7/23/2019 16:28:44,,iOS Developer,"800,000",4
+7/23/2019 16:54:26,Zangi,IOS Developer,"55,000",2
+7/23/2019 17:21:52,Digitain,PM,"350,000",0
+7/26/2019 0:36:16,BetConstruct,Software engineer,"450,000",1.5
+7/26/2019 9:29:15,InstigateMobile Cjsc,Software engineer,"250,000",1
+8/8/2019 13:03:53,Stdev,Front Developer,"500,000",4
+8/13/2019 10:56:39,,Senior QA engineer,"700,000",5
+8/14/2019 21:50:36,,Manual QA Engineer,"199,000",1
+8/16/2019 23:35:53,BetConstruct,LIVE trader,"250,000",2
+8/18/2019 16:52:04,Polymorphic,Middle Web Developer,"250,000",3
+8/18/2019 20:36:41,InconceptLabs,iOS developer,"500,000",4
+8/29/2019 12:34:39,Instigate Design,Lead Engineer,"2,000,000",10
+8/31/2019 16:26:44,Balitech,Senior JTCT Developer,"1,000,000",4
+9/6/2019 12:30:26,ԷԿԵՆԳ (Ekeng),Lead IT Specialist,"145,000",1
+10/1/2019 20:59:07,Byblosbank armenia ,information security ,"430,000",0
+10/1/2019 21:00:10,,android developer ,"760,000",5
+10/13/2019 19:35:29,,Data Analyst,"160,000",0.5
+10/18/2019 12:45:30,HelpSystems,QA Engineer I,"350,000",1.5
+10/25/2019 14:07:14,MG,QA Lead,"1,300,000",9
+10/26/2019 19:32:17,Synopsys,QA engineer 2,"420,000",4
+10/29/2019 11:03:20,FINCA Armenia,System Administrator,"950,000",5
+10/29/2019 11:03:42,Finca,Junior Loan Engineer,"1,450,000",2
+10/29/2019 11:04:08,FINCA Armenia,Network Engineer,"750,000",5
+10/29/2019 11:04:29,FINCA Armenia ,Tech support,"350,000",2
+10/29/2019 11:05:04,Ministry of Loqsh,Head of loqsh Department,"1,750,000",13
+10/29/2019 11:05:18,FINCA Armenia,DevOPS,"1,250,000",8
+10/29/2019 11:06:00,FINCA Armenia,C# Developer,"1,100,000",8
+10/29/2019 11:06:42,FINCA Armenia,System Administrator,"950,000",9
+11/3/2019 0:45:52,German company,Senior data analist ,"2,800,000",6
+11/5/2019 11:49:05,,Senior QA Automation Engineer,"700,000",5
+11/11/2019 12:27:58,OMD,C++ Software Engineer,"250,000",0
+11/12/2019 7:53:32,InnLine,FrontEnd developer,"400,000",2
+11/13/2019 23:02:33,Armsoft ,Senior developer,"680,000",9
+11/13/2019 23:03:35,Armsoft,Junior developer,"200,000",1.5
+11/14/2019 12:30:28,Questrade ,Software Developer,"2,650,000",6
+11/14/2019 16:45:12,RealTime,Network and System administrator,"400,000",6
+11/15/2019 5:56:26,freelane,illustrator,"150,000",4
+11/15/2019 18:51:36,Freelance,Full stack engineer,"700,000",2
+11/19/2019 14:26:41,STDev Armenia,Backend Developer,"650,000",3.5
+11/19/2019 14:27:27,STDev Armenia,JS Dev,"600,000",2
+11/20/2019 22:22:12,Product owner company,React Developer ,"600,000",2
+11/20/2019 22:56:52,PicsArt,Data Scientist,"200,000",1
+11/21/2019 13:50:31,,software engineer,"400,000",2
+11/21/2019 15:28:13,Telecomunications,IT Project Manager,"300,000",1
+11/21/2019 23:50:09,Somewhere no named,Middle iOS Dev,"350,000",2
+11/22/2019 16:41:43,Workfront ,Software engineer II,"1,100,000",4
+11/27/2019 0:32:16,Teamviewer Armenia,Junior 1,"410,000",1
+11/27/2019 0:58:31,BetConstruct,IT Support Specialist ,"300,000",2
+11/29/2019 16:05:03,,IT Project Manager,"600,000",2
+11/30/2019 15:29:49,Energize Global Services (EGS),Junior Java dev,"120,000",1
+12/1/2019 16:30:43,,Android developer,"700,000",3
+12/2/2019 12:18:55,,Junior Backend Developer,"200,000",1
+12/3/2019 17:57:03,Priotix,Node.js Developer,"800,000",4
+12/4/2019 14:07:10,,Software Engineer (Front End),"1,000,000",4
+12/4/2019 14:30:49,VMware Armenia,Member of Technical Staff 2,"950,000",4
+12/4/2019 16:12:56,,Senior Ruby On Rails Developer,"2,250,000",5
+12/5/2019 18:30:28,,Architect,"300,000",11
+12/6/2019 12:51:20,,Senior QA Engineer,"820,000",6
+12/6/2019 12:52:25,,iOS Developer,"702,778",3
+12/6/2019 15:27:50,VMware,Senior MTS,"2,400,000",9
+12/7/2019 2:17:15,Epam Systems (Armenia),Middle Software Engineer (JavaScript),"650,000",3
+12/9/2019 14:38:42,,UX/UI Designer,"600,000",3
+12/9/2019 23:15:42,BetConstruct,mid .Net developer,"750,000",3
+12/10/2019 9:24:06,Workfront Armenia,Software Engineer II,"750,000",4
+12/10/2019 11:28:46,OMD ,Middle C++ Developer,"500,000",2.5
+12/10/2019 12:04:30,Workfront,Product Manager,"1,200,000",4
+12/10/2019 13:13:48,Self Employeer,QA Engineer,"128,000",2
+12/10/2019 22:59:32,Toptal,Software Engineer,"3,300,000",3
+12/12/2019 12:38:29,Picsart,Senior Software Engineer,"100,000",6
+12/17/2019 10:07:17,Synopsys Armenia,R&D Engineer II,"570,000",3
+12/23/2019 22:24:38,Vmware,Member of technical staff 2,"420,000",3
+12/23/2019 23:31:23,Esterox,Front-End,"250,000",2.5
+12/24/2019 0:11:04,Digitain,Software Engineer,"700,000",2
+12/24/2019 2:18:29,ՀՀՊՆ,դասակի հրամանատար,"250,000",5
+12/24/2019 9:17:01,,Web developer,"158,000",1.5
+12/24/2019 11:18:20,PicsArt,Community Manager,"500,000",2
+12/24/2019 12:29:11,EPAM,L2,"300,000",2
+12/24/2019 14:54:06,Datafoundry,Data Scientist,"300,000",1
+12/29/2019 10:17:54,,associate project manager,"420,000",1.5
+1/2/2020 0:44:10,,Operations manager,"1,100,000",6
+1/2/2020 17:32:27,,Senior Software Engineer,"1,300,000",4
+1/4/2020 12:19:46,,Senior Java Developer,"1,100,000",5
+1/4/2020 13:11:13,Webb Fontaine Armenia ,Junior 1 (Java),"220,000",1
+1/4/2020 21:58:38,,Product Owner,"800,000",6
+1/8/2020 17:32:30,Synopsys Armenia,Circuit Design Engineer 1,"320,000",2.5
+1/9/2020 9:43:15,Seattle Company Branch,Development Lead,"3,300,000",8
+1/9/2020 13:35:40,,Software Engineer,"680,000",2
+1/10/2020 13:26:18,,Product Manager,"800,000",4
+1/10/2020 22:28:37,Start-up,Junior React.js Developer,"300,000",1
+1/11/2020 13:15:52,Topsoft Solutions,.NET Developer,"120,000",2
+1/11/2020 13:16:45,Betconstruct,.NET Developer,"400,000",2
+1/13/2020 16:05:50,,Wordpress Developer,"550,000",4
+1/17/2020 17:34:37,EPAM,Senior Frontend engineer,"1,300,000",10
+1/25/2020 19:33:15,,C/C++ Developer,"300,000",2
+1/30/2020 22:56:21,Bluenet Armenia,.NET engineer,"1,450,000",4
+1/30/2020 23:11:48,,FrontEnd developer,"300,000",1.5
+1/31/2020 0:33:09,IT company :),Chief Accountant,"300,000",7
+1/31/2020 1:28:22,Bet,PHP Developer,"800,000",5
+1/31/2020 11:13:07,BetConstruct,Mid level .Net software engineer,"500,000",3
+1/31/2020 11:16:36,Evocabank,Software developer,"450,000",4
+1/31/2020 21:21:18,Remote,React dev,"1,900,000",6
+2/1/2020 14:09:26,,Administrative Manager,"160,000",2
+2/1/2020 18:06:07,BetConstruct,SoftWare Engineer,"142,000",0.5
+2/1/2020 21:37:36,EGS,Senior Software Developer,"1,200,000",11
+2/4/2020 22:40:58,,Product Designer,"1,200,000",9
+2/9/2020 15:16:00,,Senior iOS developer,"1,200,000",6
+2/9/2020 16:49:03,HelpSystems,Senior Software Engineer,"1,500,000",4
+2/19/2020 12:03:40,KSPE,Developer,"200,000",1.5
+2/20/2020 16:09:11,Ucom,Technical Support,"180,000",2
+2/20/2020 22:54:22,,IT Support Assistant ,"250,000",1
+2/22/2020 11:50:49,Mentor Graphics,Software Engineer,"480,000",2.5
+2/22/2020 11:51:15,Mentor Graphics,Software Engineer,"630,000",3.5
+2/22/2020 11:51:42,Synopsys Armenia,Software Engineer 2,"420,000",2
+2/22/2020 11:52:15,TeamViewer Aremenia,Software Developer,"850,000",3.5
+2/24/2020 1:43:27,EPAM Systems,Mid-level Javascript developer,"850,000",6
+2/26/2020 14:03:08,kspe,front end developer,"200,000",1
+3/1/2020 23:57:04,Energize Global Services,Senior Software Engineer,"900,000",7
+3/2/2020 13:28:51,"Remote, US based company","Software Engineer (Mobile, mainly iOS)","1,300,000",7
+3/4/2020 19:34:23,Freelance,Senior React Native developer,"3,000,000",8
+3/4/2020 20:32:53,,QA Automation Engineer,"450,000",0.7
+3/5/2020 11:54:22,ayotech ,commercial manager,"478,000",3
+3/5/2020 13:38:30,betconstruct,backend developer,"200,000",3
+3/5/2020 13:39:04,betconstruct,backend developer,"300,000",2
+3/5/2020 13:43:03,instigate design,embedded software engineer,"90,000",1.5
+3/8/2020 11:02:33,,Marketing manager,"300,000",2
+4/10/2020 23:38:12,Volo,.Net Developet,"400,000",1.5
+4/12/2020 12:52:11,Mentor Graphics,Lead engineer,"1,700,000",8
+4/12/2020 22:03:37,US based company,Java backend engineer,"1,600,000",9
+4/12/2020 23:12:32,Remote German company,Java developer,"1,500,000",6
+4/20/2020 18:31:07,Double Coconut,Software Engineer,"900,000",2.5
+4/21/2020 17:52:59,Energize Global Services,Project Manager,"700,000",4
+4/21/2020 20:35:52,,Automation QA Engineer,"650,000",2
+4/22/2020 16:30:17,,Full stack developer,"550,000",4
+4/22/2020 22:43:44,,Junior QA Engineer,"250,000",1.3
+4/24/2020 22:30:41,Globbing,Customer Happiness Specialist,"105,000",3
+4/24/2020 22:31:15,Orange Fitness Premium Club,Doctor,"105,000",1
+5/1/2020 13:20:03,IT startup,Software Developer,"320,000",1
+5/2/2020 11:48:31,TopSoft,Senior Developer,"750,000",3.5
+5/4/2020 16:57:50,EGS,Senior Software Developer,"2,200,000",5
+5/9/2020 22:43:50,A contruction company,Head Accountant,"350,000",6
+5/13/2020 20:38:49,BetConstruct,IT suppport specialist,"300,000",1
+5/13/2020 21:24:48,,Sension Software Developer,"1,300,000",5
+5/13/2020 23:07:05,Preezma,Full Stack Software Engineer,"800,000",3
+5/15/2020 11:45:29,,Product Owner,"750,000",4
+5/16/2020 13:05:40,SoftConstruct,React JS Developer,"330,000",1
+5/18/2020 0:27:26,Preezma,Backend Engineer (Node.js),"750,000",2
+5/18/2020 21:01:33,AI company,Data Scientist,"250,000",1.5
+5/22/2020 14:36:04,BetConstruct,ScrumMaster,"250,000",0.5
+5/26/2020 19:54:07,Betconstruct,HelpDesk Specialist (B2B support specilaist),"280,000",1
+5/29/2020 18:20:48,,HR Recruiter,"150,000",1
+6/1/2020 10:57:37,,Graphic Designer,"55,000",6
+6/3/2020 18:07:22,TUMO,Head of Department,"2,000,000",10
+6/6/2020 0:07:23,,Front-End Developer,"400,000",1
+6/7/2020 23:19:24,,Project Manager,"250,000",1
+6/10/2020 16:36:31,PicsArt,Senior Software Engineer,"1,700,000",4
+6/10/2020 22:43:52,Intelinair,Senior Developer,"1,200,000",7
+6/15/2020 14:55:16,Freelance ,Project Manager ,"1,200,000",5
+6/18/2020 15:36:46,Telecommunication ,Senior Business Development Executive,"700,000",7
+6/25/2020 16:30:55,Webb Fontaine Holding,Java Software Engineer Junior 2,"450,000",1.5
+6/25/2020 20:31:25,,Engineering Manager,"1,300,000",6
+6/26/2020 23:38:13,Upwork,TimeTracker  On/Off  Developer,"3,500,000",2
+6/30/2020 1:27:10,OMD,C++ software engineer,"1,600,000",8
+7/3/2020 16:30:32,CryptoX,Project Manager,"350,000",1.5
+7/13/2020 11:27:49,Betconstruct,Software engineer (ReactJS developer),"500,000",3
+7/13/2020 14:15:41,PicsArt,Senior Frontend Engineer,"1,400,000",11
+7/13/2020 18:21:33,,Software Development Program Manager,"1,400,000",5
+7/15/2020 23:30:33,Ginosi,Senior PHP developer,"900,000",8
+7/21/2020 0:51:49,Fifth llc,Product Manager,"600,000",4
+7/21/2020 14:35:52,,UX Designer,"1,000,000",8
+7/22/2020 11:05:08,Hylink,Android developer,"250,000",1.5
+7/22/2020 19:49:24,Media,Translator,"200,000",5
+7/22/2020 19:49:59,Freelance,Social Media Marketing,"200,000",13
+7/29/2020 16:22:04,Praemium,Software Engineer,"600,000",2
+7/30/2020 10:43:44,Yerevan City,Consultant,"90,000",3
+7/30/2020 15:04:04,Ayotech,Sales Manager,"460,000",3
+7/30/2020 19:57:25,Steven-PEI Development AB,Senior Software Engineer,"1,600,000",10
+7/30/2020 19:57:57,EPAM Systems,Lead Software Engineer,"1,300,000",9
+7/31/2020 19:54:45,,.net developer,"140,000",1
+8/1/2020 17:00:14,,Android Developer,"500,000",2
+8/4/2020 16:46:13,Dom-Daniel,Junior .NET Developer,"155,000",1
+8/7/2020 9:36:24,Optym,Front-end developer,"1,000,000",4.5
+8/7/2020 15:16:36,IT,Executive assistant,"96,000",0
+8/7/2020 15:17:18,,Marketing event manager,"180,000",1.5
+8/7/2020 19:13:50,,Team Lead,"1,000,000",7
+8/7/2020 23:17:31,Synopsys,Senior R&D Engineer 2,"830,000",10
+8/8/2020 11:09:05,Epam,Senior developer,"950,000",5
+8/10/2020 18:10:17,OMD,Technical support,"900,000",4
+8/10/2020 23:34:09,,Automation QA,"560,000",2
+8/11/2020 9:46:55,Ucom,Head of Technical Support,"400,000",5
+8/11/2020 9:47:28,Ucom,Quality Control Team Lead,"250,000",3
+8/14/2020 0:26:45,Siemens,Senior Software Engineer / PSSE,"2,400,000",19
+8/16/2020 18:17:02,,Senior full stack developer,"1,350,000",7
+8/23/2020 10:49:05,,Product manager,"1,000,000",2
+8/28/2020 19:46:31,Freelance,Senior Android  ,"1,300,000",3
+9/1/2020 19:40:16,,Automation Engineer ,"2,200,000",8
+9/3/2020 13:24:22,Branding and UI UX Design Agency,Head of Project Management,"300,000",5
+9/3/2020 19:41:03,Simply Technologies,Software Engineer,"850,000",3
+9/4/2020 15:08:36,Bet Construct,Creative director,"1,500,000",6
+9/6/2020 16:12:35,Global Solutions,Middle full stack web,"150,000",2
+9/6/2020 17:53:37,,Mid Node Js Developer,"500,000",2
+9/7/2020 13:40:07,,Business Development Manager,"1,000,000",4
+9/7/2020 13:41:23,,CTO,"2,000,000",10
+9/7/2020 14:51:23,PicsArt,UX Specialist,"500,000",2.5
+9/7/2020 14:54:06,,CMO,"1,000,000",10
+9/7/2020 15:29:12,,Javascript ,"200,000",1
+9/7/2020 15:32:22,Entrepreneur,Digital content creator/blogger,"500,000",5
+9/7/2020 15:44:27,All.me,Senior software engineer,"1,800,000",10
+9/7/2020 15:50:46,Code-Bridge CJSC,Mid Front-end Developer,"150,000",1.5
+9/7/2020 15:51:23,Code-Bridge CJSC,QA,"120,000",1
+9/7/2020 16:43:26,,Event Manager,"250,000",3.5
+9/7/2020 17:20:14,Loopex Digital,SEO Specialist,"250,000",3
+9/7/2020 17:40:09,PwC,Partner,"3,375,000",9
+9/7/2020 18:31:01,Zaimix,IT PM,"200,000",0
+9/7/2020 20:26:04,,SM Marketing Manager,"300,000",6
+9/8/2020 12:26:47,A software development office,React.js developer,"350,000",2
+9/8/2020 12:58:27,“Armenia” International Airports” CJSC,HR specialist,"322,000",10
+9/9/2020 0:26:38,Volo,QA Engineer ,"970,000",4
+9/9/2020 9:47:08,EGS,Senior software developer,"600,000",30
+9/10/2020 20:12:26,,Machine Learning Intern,"68,000",0
+9/12/2020 0:35:24,Vmware,MTS3,"1,800,000",5
+9/12/2020 14:28:29,,Back-End Developer,"300,000",1
+9/13/2020 23:22:20,Synopsys,Intern,"210,000",0
+9/14/2020 21:44:50,PicsArt,Intern iOS Developer,"80,000",0
+9/15/2020 11:23:04,Ayotech,CMS Developer,"270,000",2.5
+9/15/2020 23:52:05,Freelance,Middle full stack developer,"750,000",2
+9/16/2020 1:02:23,InconceptLabs,Middle Android developer ,"1,200,000",4
+9/16/2020 4:19:11,BetConstruct,Lead,"1,500,000",7
+9/16/2020 14:37:40,Vmware,Member of technical staff 1,"470,000",1
+9/22/2020 12:41:10,,Engineering Manager,"1,500,000",6.5
+9/22/2020 20:15:53,,Junior .Net Developer,"240,000",1
+10/8/2020 11:20:28,TeamViewer Armenia,Software Engineer,"1,060,000",4
+10/8/2020 11:20:53,Vmware ,MTS 2,"590,000",2
+10/27/2020 13:07:14,,Project Manager,"700,000",2
+11/7/2020 2:28:16,Ucraft,Senior Frontend Developer,"1,000,000",5
+11/8/2020 8:23:16,,Junior Machine Learning Specialist,"250,000",0.25
+11/22/2020 1:31:57,10Web,Content Writer,"300,000",4
+11/22/2020 13:12:22,,QA engineer ,"600,000",1.5
+11/29/2020 15:37:12,Software development office,JavaScript Developer,"400,000",2.5
+11/29/2020 15:55:50,,React JavaScript Developer,"170,000",1.5
+12/2/2020 17:36:08,,Sales Manager,"750,000",3
+12/2/2020 21:15:07,Bank,Content and communication specialist,"180,000",0.5
+12/9/2020 11:43:23,AAB Construction,Project manager assistant,"350,000",4
+12/13/2020 3:07:58,TeamViewer Armenia,Mid software engineer,"750,000",3.5
+12/18/2020 11:21:56,Synopsys,Software engineer II,"500,000",2.5
+12/19/2020 17:03:50,,Software Development Engineer in Test,"1,200,000",3
+12/21/2020 23:35:53,ProConsult,SMM Specialist,"800,000",4
+12/22/2020 18:12:10,EPAM Armenia,Senior software engineer - Java,"110,000",7
+12/28/2020 0:05:33,,Sales Rep,"320,000",3
+12/30/2020 22:21:05,British-based startup,Fullstack engineer,"500,000",2
+1/7/2021 19:40:03,Bet Construct,Android Developer,"700,000",4
+1/12/2021 14:52:14,Coologic,Junior Frontend Developer,"120,000",0.5
+1/13/2021 22:41:20,Picsart ,Senior Backend Engineer ,"2,200,000",10
+1/13/2021 22:42:23,Dental clinics ,Dentist ,"1,500,000",10
+1/16/2021 18:08:38,,QA Engineer,"250,000",1.5
+1/21/2021 0:19:01,Epam Armenia,Full stack software engineer,"600,000",2.8
+1/24/2021 23:09:04,,QA Junior1,"220,000",1
+1/25/2021 11:20:39,AOByte,Full Stack Web Developer (PHP/React),"700,000",3
+1/26/2021 17:21:59,,Administrative Assistant,"300,000",9
+1/30/2021 17:29:55,Freelance,Senior Android developer,"1,100,000",3
+2/3/2021 3:06:29,Sda,Business consultant ,"400,000",3
+2/3/2021 18:02:38,Freelance,Senior React Developer,"4,000,000",4
+2/3/2021 18:14:01,WeConstruct,Middle Full Stack Developer,"100,000",2
+2/3/2021 18:14:35,AOD.space,Middle Backend Developer,"250,000",3
+2/4/2021 0:27:33,,Software Engineer,"930,000",4.5
+2/9/2021 21:15:48,Freelance,Senior React Native Developer,"2,500,000",3
+2/12/2021 0:09:54,PicsArt,Senior Software Engineer,"1,000,000",2
+2/23/2021 13:07:50,Bank,Head of Information Security Division,"1,200,000",15
+2/24/2021 9:23:56,Picsart,JavaScript developer,"150,000",2
+2/24/2021 23:24:39,,SAS programmer,"350,000",1.5
+2/25/2021 21:47:23,,Engineering Manager,"1,700,000",7
+3/2/2021 15:52:14,Webb Fontaine,Senior Technology Architect,"10,000,000",16
+3/2/2021 22:37:24,,Junior QA Engineer,"300,000",1.5
+3/3/2021 4:04:19,,Middle Frontend developer,"800,000",2
+3/5/2021 9:06:13,,Digital Marketing Specialist,"130,000",1
+3/12/2021 15:14:52,Freelance,Senior Angular Developer,"2,500,000",5
+3/16/2021 17:23:43,,Team Lead,"1,081,000",6
+3/19/2021 14:38:14,,Product Owner,"600,000",2
+3/20/2021 21:49:56,,Manual QA,"360,000",2.5
+3/21/2021 6:33:47,,Full stack developer ,"450,000",3
+3/22/2021 0:20:03,Digitain,UI/UX Designer,"400,000",1.5
+3/24/2021 20:44:09,,Full stack software engineer,"700,000",3
+3/25/2021 23:39:20,Double Coconut,.NET Developer,"250,000",1.5
+3/26/2021 17:00:07,,C++ Software Engineer,"400,000",2
+3/26/2021 20:07:50,,Php developer,"1,700,000",5
+3/27/2021 21:20:50,,Project Manager,"400,000",6
+3/30/2021 21:54:00,Mentor Graphics Armenia,Intern,"185,250",0
+3/31/2021 1:03:58,Optym,Senior Principal Developer,"2,000,000",10
+3/31/2021 18:23:38,Picsart,Software Engineer II,"1,100,000",3.5
+3/31/2021 21:30:45,Consulting,Full stack Php developer,"300,000",6
+4/1/2021 18:35:55,PicsArt,Mid 2 iOS developer,"1,500,000",5
+4/3/2021 20:23:35,softconstruct,Illustrator ,"250,000",3
+4/4/2021 22:56:58,Matibiometrics,Senior QA Engineer,"1,500,000",8
+4/6/2021 11:05:09,,Product manager,"400,000",2
+4/13/2021 22:53:07,Accounting company,"Bookkeeping, accounting ","140,000",3
+4/15/2021 14:29:03,Pharmaceutical company,HR Specialist,"552,425",15
+4/20/2021 13:46:00,WF,Senior QA Engineer,"1,100,000",7
+4/21/2021 11:19:21,,Junior Vue.js developer,"250,000",0.8
+4/21/2021 11:24:25,Freelance,Junior Front-End Developer,"150,000",0.8
+4/23/2021 12:02:58,Esterox,QA,"68,000",0
+4/24/2021 19:55:50,,Senior Software Engineer,"1,500,000",7
+4/25/2021 1:24:46,DataArt,Frontend Developer,"1,400,000",5
+4/26/2021 22:32:53,DataArt,Senior Node.js Developer,"1,200,000",5
+4/28/2021 20:37:05,OWL & Five USA,Product designer,"450,000",3
+4/28/2021 20:40:02,Rendline,UX/UI Designer,"150,000",1
+4/28/2021 22:22:43,EPAM,Senior Software Engineer,"1,100,000",7
+4/29/2021 0:02:23,,Senior UX/UI designer ,"900,000",11
+4/29/2021 11:14:27,Converse Bank,Senior Developer,"1,000,000",6
+5/4/2021 20:12:49,Finances,Senior Copywriter,"400,000",6
+5/5/2021 3:23:11,IT Company,Machine Learning Engineer / Data Scientist,"450,000",2
+5/6/2021 16:24:23,,Automation QA ,"300,000",3
+5/7/2021 12:24:02,,Data Analyst,"900,000",2.5
+5/7/2021 18:01:51,,Sales Manager,"350,000",2
+5/9/2021 14:42:48,Symbolium,COO,"380,000",5
+5/11/2021 13:20:34,Armenian IT company,Technical recruiter,"400,000",2
+5/11/2021 22:43:49,,Lead QA,"1,310,000",7
+5/12/2021 0:17:47,Softconstruct ,Manual QA,"200,000",1
+5/12/2021 19:27:36,,Automation QA engineer,"410,000",3.5
+5/19/2021 16:06:18,,QA Engineer,"360,000",2
+5/20/2021 1:17:49,Service Titan,Customer Support Advocate,"300,000",1
+5/21/2021 14:42:29,,Remote UI/UX Designer,"3,500,000",11
+5/28/2021 16:23:15,,Front end Engineer ,"500,000",1
+6/1/2021 17:41:02,Volo,Middle .net developer,"800,000",2
+6/10/2021 15:48:34,,Junior angular developer,"250,000",1.5
+6/12/2021 11:59:13,,Angular developer,"200,000",1.5
+6/12/2021 14:44:52,Startup Armenia Foundation,Project Manager ,"540,000",4
+6/12/2021 14:45:55,Startup Armenia Foundation,UI/UX Designer,"400,000",3.5
+6/12/2021 14:47:31,Seaside Startup Summit,Digital Marketing Specialist,"550,000",6
+6/12/2021 14:50:20,Flight Hunter LLC,Software Engineer,"350,000",5
+6/16/2021 16:38:04,HiLearn,Mid Research Engineer,"300,000",2
+6/16/2021 16:39:55,DataArt,Middle python dev,"1,300,000",3
+6/21/2021 0:24:34,,UI/UX Designer,"150,000",0.5
+6/21/2021 18:08:55,Ucom,Financial reporting specialist ,"300,000",3
+6/23/2021 1:56:21,volo,.net developer,"281,000",2
+6/25/2021 1:08:31,,Junior Automation QA,"200,000",0.3
+6/25/2021 18:31:17,,Associate Product Manager,"450,000",1
+6/28/2021 19:01:04,Proconsult CJSC,"Financial Director, CFO","6,000,000",7
+7/5/2021 13:11:06,,Senior Software Engineer ,"1,500,000",3.5
+7/5/2021 13:11:13,,Senior Software Engineer ,"1,500,000",3.5
+7/6/2021 21:04:03,,Senior QA Engineer,"750,000",3
+7/6/2021 22:57:14,,QA Mid 1,"600,000",1.5
+7/7/2021 13:30:07,FreeDom Development,Product Owner / Project Manager,"302,000",1
+7/10/2021 13:57:59,Tumo Yerevan,Ուսուցանող մարզիչ ,"101,000",3
+7/10/2021 21:54:07,,React js,"450,000",2
+7/10/2021 23:43:36,Esterox,Backend Developer,"204,000",0
+7/12/2021 23:27:45,,SysAdmin,"530,000",3
+7/13/2021 12:13:51,Epam,Senior Frontend engineer,"1,100,000",5
+7/14/2021 16:15:02,W3C,Senior Html developer,"3,000,000",7
+7/14/2021 18:07:03,Picsart,Intern Back end,"80,000",0.5
+7/20/2021 12:22:03,,Manual QA,"110,000",0.5
+7/22/2021 10:56:24,Volo,Senior QA,"800,000",5
+7/24/2021 4:21:52,Epam Armenia,Middle Software Engineer (React.js front),"545,000",4
+7/25/2021 13:55:19,,Project Manager,"250,000",1
+7/25/2021 20:35:53,,Product Owner,"730,000",3
+7/27/2021 14:09:33,Renderforest,UI/UX Designer,"100,000",2
+7/27/2021 22:00:30,,Middle Vue Js Developer,"430,000",2
+7/29/2021 14:26:35,Foster Agency,UI/UX designer,"180,000",2
+7/30/2021 11:34:46,,Tech recruiter,"200,000",2
+7/30/2021 16:06:07,DataArt,FrontEnd ,"1,400,000",5
+7/30/2021 23:59:07,Optym,Senior Web Developer (React.js),"1,500,000",5
+7/31/2021 13:09:17,,Backend Engineer,"650,000",5
+8/1/2021 22:34:47,Adobe,Software Engineer 2,"1,200,000",10
+8/4/2021 12:00:08,Willing & Able Operations,Project Manager,"200,000",1
+8/4/2021 12:30:28,,JavaScript Developer,"120,000",0.5
+8/5/2021 16:10:30,Praemium,Senior software engineer,"1,200,000",5
+8/5/2021 16:50:21,,QA engineer ,"400,000",2.5
+8/5/2021 17:18:59,,PM,"300,000",3
+8/7/2021 16:19:56,banking,Chief specialist,"310,000",4
+8/12/2021 14:17:35,Siemense EDA (Mentor Graphics Armenia),Software Engineer,"650,000",1.5
+8/14/2021 17:48:09,Freelance,Blockchain & smart contracts developer,"9,800,000",5.5
+8/14/2021 23:05:28,Synopsys Armenia Educational Department,Intern,"44,710",1
+8/15/2021 18:28:11,Softr,Senior Angular Developer,"1,300,000",4
+8/16/2021 8:43:37,Software Engineer,Mid level Software Engineer,"900,000",4
+8/16/2021 22:44:54,Wic,Full stack developer ,"600,000",2.5
+8/17/2021 10:57:02,,junior web developer,"400,000",1.4
+8/18/2021 10:27:38,Web apricot,Junior back-end developer,"100,000",1
+8/18/2021 18:37:29,Digitain ,Product Owner,"800,000",5
+8/19/2021 15:46:53,Sololearn,Data Scientist/Analyst,"800,000",5
+8/19/2021 15:48:13,SmartClick,Data Scientist,"400,000",1.5
+8/19/2021 22:45:46,,Solution Architect,"2,300,000",17
+8/21/2021 16:33:27,Voip,Rate manager,"200,000",6
+8/26/2021 18:35:36,Picsart,QA Intern,"150,000",0
+8/30/2021 14:20:55,ProConsult,Senior Blockchain Architect ,"11,200,000",14
+9/3/2021 16:57:47,,Java developer,"350,000",1.5
+9/4/2021 16:19:45,,Technical Writer,"600,000",3.5
+9/4/2021 20:01:57,,Senior Product designer,"1,500,000",9
+9/5/2021 10:04:32,,Senior Software Engineer,"1,400,000",6

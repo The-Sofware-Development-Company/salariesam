@@ -1,9 +1,17 @@
-import './styles/styles.scss'
+import './styles/main.scss'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
     <div className="App">
-      <h1>salaries</h1>
+      <Header/>
+      <main>
+        <div className="container">
+          
+        </div>
+      </main>
+      <Footer/>
     </div>
   );
 }

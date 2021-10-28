@@ -5,3 +5,11 @@
 @import "typography.scss";
 @import "common.scss";
 @import "utils.scss";
+
+.row {
+    display: flex;
+}
+
+.col {
+    width: 25%;
+}

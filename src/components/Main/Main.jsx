@@ -3,6 +3,7 @@ import Papaparse from "papaparse"
 import searchIcon from "../../assets/search-icon.svg"
 import downloadIcon from "../../assets/download-icon.svg"
 import './styles.scss'
+import About from "../About/About";
 
 const titles = ["date", "company", "position", "salary", "years of experience"]
 
@@ -101,30 +102,19 @@ const Main = () => {
 
     return (
         <main>
+            
+            <About/>
             <div className="container">
-            <p className="fz16 lh18 c-black300">The tool allows to see general trends of salaries on Armenian IT market.</p>
-            <p className="fz16 lh18 c-black300">Salaries are after taxes in Armenian Drams.</p>
-            <p className="fz16 lh18 c-black300">The reported data is being translated to English and reviewed to exclude spam.</p>
-            <p className="fz16 lh18 c-black300">If a person reported “350” salary, we make an assumption that it means 350 thousand AMD. </p>
-            <p className="fz16 lh18 c-black300">You might request the data you submitted to be removed. To do it drop me an email to rafael[at]rahar[dot]net.</p>
-            <p className="fz16 lh18 c-black300">Data is licensed under Open Data Commons Attribution License (ODC-By) v1, and available for download here.</p>
-            
-            <p className="fz16 lh18 c-black300 mt30">How this work:</p>
-            <ol className="ol">
-                <li className="li fz16 lh18 c-black300">You click on "Submit my report" button on the left;</li>
-                <li className="li fz16 lh18 c-black300">You fill-in a simple form and submit the data. That"s it. No authentication or personal data needed.</li>
-            </ol>
-            
-            <div className="form-btn-wrapper mt30">
-                <a href="https://docs.google.com/forms/d/1M4ztN09EvaminyLIDH4rOgtnr0lW-AHEYXiThbpAZa0/viewform?edit_requested=true" className="btn dark">Submit my report</a>
-                <form action="">
-                <label htmlFor="search" hidden>Search</label>
-                <div className="input-wrapper">
-                    <img className="search-icon" src={searchIcon} alt="Search"/>
-                    <input className="search-input" type="text" placeholder="Search"/>
+                <div className="form-btn-wrapper mt30">
+                    <a href="https://docs.google.com/forms/d/1M4ztN09EvaminyLIDH4rOgtnr0lW-AHEYXiThbpAZa0/viewform?edit_requested=true" className="btn dark">Submit my report</a>
+                    <form action="">
+                    <label htmlFor="search" hidden>Search</label>
+                    <div className="input-wrapper">
+                        <img className="search-icon" src={searchIcon} alt="Search"/>
+                        <input className="search-input" type="text" placeholder="Search"/>
+                    </div>
+                    </form>
                 </div>
-                </form>
-            </div>
             </div>
             
             {

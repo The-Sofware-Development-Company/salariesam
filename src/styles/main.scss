@@ -44,3 +44,42 @@ form {
         width: 22px;
     }
 }
+
+.table {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.table-header {
+    height: 45px;
+}
+
+.col-label {
+    display: flex;
+    padding: 0 15px;
+}
+
+.sort-btn {
+    background: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: $black;
+    &.up {
+        .arrows-wrap {
+            svg:first-child path {
+                fill: $red;
+            }
+        }
+    }
+    &.down {
+        .arrows-wrap {
+            svg:last-child path {
+                fill: $red;
+            }
+        }
+    }
+}

@@ -4,6 +4,7 @@ import searchIcon from "../../assets/search-icon.svg"
 import downloadIcon from "../../assets/download-icon.svg"
 import './styles.scss'
 import About from "../About/About";
+import SortArrows from "../SortArrows/SortArrows";
 
 const titles = ["date", "company", "position", "salary", "years of experience"]
 
@@ -121,129 +122,82 @@ const Main = () => {
             rows.length > 0 ?
                 <main>
                     <div className="container">
+                        <div className="table">
+                            <div className="row table-header">
 
-                        <div className="row">
-                        <div
-                            className="col col-label"
-                            onClick={() => {
-                            setSortType(sortType == "dateUp" ? "dateDown" : "dateUp");
-                            sortTable(sortType == "dateUp" ? "dateDown" : "dateUp");
-                            }}
-                        >
-                            Date
+                                <div className="col col-label">
+                                    <button 
+                                        className={sortType == "dateUp" ? "sort-btn up": sortType == "dateDown" ? "sort-btn down" : "sort-btn"}
+                                        onClick={() => {
+                                            setSortType(sortType == "dateUp" ? "dateDown" : "dateUp");
+                                            sortTable(sortType == "dateUp" ? "dateDown" : "dateUp");
+                                        }}>
+                                        Date
+                                        <SortArrows/>
+                                    </button>
+                                </div>
 
-                            <span className="col-icon-container">
-                            <img
-                                // src={TopArrowInactive}
-                                className={sortType == "dateUp" ? "active" : ""}
-                            />
-                            <img
-                                // src={DownArrowInactive}
-                                className={sortType == "dateDown" ? "active" : ""}
-                            />
-                            </span>
-                        </div>
+                                <div className="col col-label">
+                                    <button
+                                        className={sortType == "companyUp" ? "sort-btn up": sortType == "companyDown" ? "sort-btn down" : "sort-btn"}
+                                        onClick={() => {
+                                            setSortType(sortType == "companyUp" ? "companyDown" : "companyUp");
+                                            sortTable(sortType == "companyUp" ? "companyDown" : "companyUp");
+                                        }}>
+                                        Company
+                                        <SortArrows/>
+                                    </button>
+                                </div>
 
-                        <div
-                            className="col col-label"
-                            onClick={() => {
-                            setSortType(sortType == "companyUp" ? "companyDown" : "companyUp");
-                            sortTable(sortType == "companyUp" ? "companyDown" : "companyUp");
-                            }}
-                        >
-                            {/* {JSON.stringify(rows[0][1])} */}
-                            Company
+                                <div className="col col-label">
+                                    <button 
+                                        className={sortType == "positionUp" ? "sort-btn up": sortType == "positionDown" ? "sort-btn down" : "sort-btn"}
+                                        onClick={() => {
+                                            setSortType(sortType == "positionUp" ? "positionDown" : "positionUp");
+                                            sortTable(sortType == "positionUp" ? "positionDown" : "positionUp");
+                                        }}>
+                                        Position
+                                        <SortArrows/>
+                                    </button>
+                                </div>
 
-                            <span className="col-icon-container">
-                            <img
-                                // src={TopArrowInactive}
-                                className={sortType == "companyUp" ? "active" : ""}
-                            />
-                            <img
-                                // src={DownArrowInactive}
-                                className={sortType == "companyDown" ? "active" : ""}
-                            />
-                            </span>
-                        </div>
+                                <div className="col col-label">
+                                    <button 
+                                        className={sortType == "salaryUp" ? "sort-btn up": sortType == "salaryDown" ? "sort-btn down" : "sort-btn"}
+                                        onClick={() => {
+                                            setSortType(sortType == "salaryUp" ? "salaryDown" : "salaryUp");
+                                            sortTable(sortType == "salaryUp" ? "salaryDown" : "salaryUp");
+                                        }}>
+                                        Salary
+                                        <SortArrows/>
+                                    </button>
+                                </div>
 
-                        <div
-                            className="col col-label"
-                            onClick={() => {
-                            setSortType(sortType == "positionUp" ? "positionDown" : "positionUp");
-                            sortTable(sortType == "positionUp" ? "positionDown" : "positionUp");
-                            }}
-                        >
-                            {/* {JSON.stringify(rows[0][2])} */}
-                            Position
-
-                            <span className="col-icon-container">
-                            <img
-                                // src={TopArrowInactive}
-                                className={sortType == "positionUp" ? "active" : ""}
-                            />
-                            <img
-                                // src={DownArrowInactive}
-                                className={sortType == "positionDown" ? "active" : ""}
-                            />
-                            </span>
-                        </div>
-
-                        <div
-                            className="col col-label"
-                            onClick={() => {
-                            setSortType(sortType == "salaryUp" ? "salaryDown" : "salaryUp");
-                            sortTable(sortType == "salaryUp" ? "salaryDown" : "salaryUp");
-                            }}
-                        >
-                            {/* {JSON.stringify(rows[0][3])} */}
-                            Salary
-
-                            <span className="col-icon-container">
-                            <img
-                                // src={TopArrowInactive}
-                                className={sortType == "salaryUp" ? "active" : ""}
-                            />
-                            <img
-                                // src={DownArrowInactive}
-                                className={sortType == "salaryDown" ? "active" : ""}
-                            />
-                            </span>
-                        </div>
-
-                        <div
-                            className="col col-label"
-                            onClick={() => {
-                            setSortType(sortType == "expUp" ? "expDown" : "expUp");
-                            sortTable(sortType == "expUp" ? "expDown" : "expUp");
-                            }}
-                        >
-                            {/* {JSON.stringify(rows[0][4])} */}
-                            Years of experience
-
-                            <span className="col-icon-container">
-                            <img
-                                // src={TopArrowInactive}
-                                className={sortType == "expUp" ? "active" : ""}
-                            />
-                            <img
-                                // src={DownArrowInactive}
-                                className={sortType == "expDown" ? "active" : ""}
-                            />
-                            </span>
-                        </div>
-                        </div>
-
-                        {rows.map((item, idx) => {
-                        return (
-                            <div key={idx} className={`row  ${idx}`}>
-                            <div className="col date">{item["Date"]}</div>
-                            <div className="col company">{item["Company"] == "" ? '""' : item["Company"]}</div>
-                            <div className="col position">{item["Position"]}</div>
-                            <div className="col salary">{item["Salary"]}</div>
-                            <div className="col experience">{item["Years of experience"] == "" ? '""' : item["Years of experience"]}</div>
+                                <div className="col col-label">
+                                    <button 
+                                        className={sortType == "expUp" ? "sort-btn up": sortType == "expDown" ? "sort-btn down" : "sort-btn"}
+                                        onClick={() => {
+                                            setSortType(sortType == "expUp" ? "expDown" : "expUp");
+                                            sortTable(sortType == "expUp" ? "expDown" : "expUp");
+                                        }}>
+                                        Years of experience
+                                        <SortArrows/>
+                                    </button>
+                                </div>
                             </div>
-                        )
-                        })}
+                            {rows.map((item, idx) => {
+                                return (
+                                    <div key={idx} className={`row  ${idx}`}>
+                                    <div className="col date">{item["Date"]}</div>
+                                    <div className="col company">{item["Company"] == "" ? '""' : item["Company"]}</div>
+                                    <div className="col position">{item["Position"]}</div>
+                                    <div className="col salary">{item["Salary"]}</div>
+                                    <div className="col experience">{item["Years of experience"] == "" ? '""' : item["Years of experience"]}</div>
+                                    </div>
+                                )
+                            })}
+                        </div>
+
                     </div>
                 </main>
                 : null

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import Papaparse from "papaparse"
 import searchIcon from "../../assets/search-icon.svg"
 import downloadIcon from "../../assets/download-icon.svg"
@@ -23,7 +23,7 @@ let copyOfRows = [];
 
 const Main = () => {
 
-    const [rows, setRows] = useState({});
+    const [rows, setRows] = useState([]);
     const [sortType, setSortType] = useState();
 
     useEffect(() => {
@@ -51,56 +51,64 @@ const Main = () => {
         return transformedData;
     }
 
-    const sortTable = (arg) => {
-        if (arg == "dateUp") {
-            rows.sort((a, b) => new Date(b["Date"]) - new Date(a["Date"]));
+    const sortTable = useMemo(() => {
+        let result = [...rows];
+
+        if (sortType === "dateUp") {
+            result.sort((a, b) => new Date(b["Date"]) - new Date(a["Date"]));
         }
-        else if (arg == "dateDown") {
-            rows.sort((a, b) => new Date(a["Date"]) - new Date(b["Date"]));
+        else if (sortType === "dateDown") {
+            result.sort((a, b) => new Date(a["Date"]) - new Date(b["Date"]));
         }
-        else if (arg == "companyUp") {
-            rows.sort((a, b) => a["Company"] > b["Company"] ? 1 : -1);
+        else if (sortType === "companyUp") {
+            result.sort((a, b) => a["Company"] > b["Company"] ? 1 : -1);
         }
-        else if (arg == "companyDown") {
-            rows.sort((a, b) => b["Company"] > a["Company"] ? 1 : -1);
+        else if (sortType === "companyDown") {
+            result.sort((a, b) => b["Company"] > a["Company"] ? 1 : -1);
         }
-        else if (arg == "positionUp") {
-            rows.sort((a, b) => a["Position"] > b["Position"] ? 1 : -1);
+        else if (sortType === "positionUp") {
+            result.sort((a, b) => a["Position"] > b["Position"] ? 1 : -1);
         }
-        else if (arg == "positionDown") {
-            rows.sort((a, b) => b["Position"] > a["Position"] ? 1 : -1);
+        else if (sortType === "positionDown") {
+            result.sort((a, b) => b["Position"] > a["Position"] ? 1 : -1);
         }
-        else if (arg == "salaryUp") {
-            rows.sort((a, b) => {
+        else if (sortType === "salaryUp") {
+            result.sort((a, b) => {
                 if (a["Salary"] !== undefined && b["Salary"] !== undefined) {
                     return +a["Salary"].split(',').join('') > +b["Salary"].split(',').join('') ? 1 : -1
                 }
             });
         }
-        else if (arg == "salaryDown") {
-            rows.sort((a, b) => {
+        else if (sortType === "salaryDown") {
+            result.sort((a, b) => {
                 if (a["Salary"] !== undefined && b["Salary"] !== undefined) {
                     return +b["Salary"].split(',').join('') > +a["Salary"].split(',').join('') ? 1 : -1
                 }
             });
         }
-        else if (arg == "expUp") {
-            rows.sort((a, b) => {
+        else if (sortType === "expUp") {
+            result.sort((a, b) => {
                 if (a["Years of experience"] !== undefined && b["Years of experience"] !== undefined) {
                     return +a["Years of experience"].split(',').join('') > +b["Years of experience"].split(',').join('') ? 1 : -1
                 }
             });
         }
-        else if (arg == "expDown") {
-            rows.sort((a, b) => {
+        else if (sortType === "expDown") {
+            result.sort((a, b) => {
                 if (a["Years of experience"] !== undefined && b["Years of experience"] !== undefined) {
                     return +b["Years of experience"].split(',').join('') > +a["Years of experience"].split(',').join('') ? 1 : -1
                 }
             });
         }
 
-        setRows((prev) => [...prev, rows]);
-    }
+        return result;
+
+        // setRows((prev) => [...prev, rows]);
+    }, [rows, sortType]);
+
+    const handleChange = useCallback((e) => {
+        searching(e.target.value);
+    }, []);
 
     const searching = (value) => {
         setRows(copyOfRows);
@@ -118,7 +126,6 @@ const Main = () => {
 
     return (
         <main>
-
             <About />
             <div className="container">
                 <div className="form-btn-wrapper mt30">
@@ -131,9 +138,7 @@ const Main = () => {
                                 className="search-input"
                                 type="text"
                                 placeholder="Search"
-                                onChange={(e) => {
-                                    searching(e.target.value);
-                                }}
+                                onChange={handleChange}
                             />
                             <p>Showing {rows.length} of {copyOfRows.length != 0 ? copyOfRows.length : rows.length} entries</p>
                         </div>
@@ -142,7 +147,7 @@ const Main = () => {
             </div>
 
             {
-                rows.length > 0 ?
+                sortTable?.length > 0 ?
                     <main>
                         <div className="container">
                             <div className="table">
@@ -150,10 +155,10 @@ const Main = () => {
 
                                     <div className="col col-label">
                                         <button
-                                            className={sortType == "dateUp" ? "sort-btn up" : sortType == "dateDown" ? "sort-btn down" : "sort-btn"}
+                                            className={sortType === "dateUp" ? "sort-btn up" : sortType === "dateDown" ? "sort-btn down" : "sort-btn"}
                                             onClick={() => {
-                                                setSortType(sortType == "dateUp" ? "dateDown" : "dateUp");
-                                                sortTable(sortType == "dateUp" ? "dateDown" : "dateUp");
+                                                setSortType(sortType === "dateUp" ? "dateDown" : "dateUp");
+                                                // sortTable(sortType === "dateUp" ? "dateDown" : "dateUp");
                                             }}>
                                             Date
                                             <SortArrows />
@@ -162,10 +167,10 @@ const Main = () => {
 
                                     <div className="col col-label">
                                         <button
-                                            className={sortType == "companyUp" ? "sort-btn up" : sortType == "companyDown" ? "sort-btn down" : "sort-btn"}
+                                            className={sortType === "companyUp" ? "sort-btn up" : sortType === "companyDown" ? "sort-btn down" : "sort-btn"}
                                             onClick={() => {
-                                                setSortType(sortType == "companyUp" ? "companyDown" : "companyUp");
-                                                sortTable(sortType == "companyUp" ? "companyDown" : "companyUp");
+                                                setSortType(sortType === "companyUp" ? "companyDown" : "companyUp");
+                                                // sortTable(sortType === "companyUp" ? "companyDown" : "companyUp");
                                             }}>
                                             Company
                                             <SortArrows />
@@ -174,10 +179,10 @@ const Main = () => {
 
                                     <div className="col col-label">
                                         <button
-                                            className={sortType == "positionUp" ? "sort-btn up" : sortType == "positionDown" ? "sort-btn down" : "sort-btn"}
+                                            className={sortType === "positionUp" ? "sort-btn up" : sortType === "positionDown" ? "sort-btn down" : "sort-btn"}
                                             onClick={() => {
-                                                setSortType(sortType == "positionUp" ? "positionDown" : "positionUp");
-                                                sortTable(sortType == "positionUp" ? "positionDown" : "positionUp");
+                                                setSortType(sortType === "positionUp" ? "positionDown" : "positionUp");
+                                                // sortTable(sortType === "positionUp" ? "positionDown" : "positionUp");
                                             }}>
                                             Position
                                             <SortArrows />
@@ -186,10 +191,10 @@ const Main = () => {
 
                                     <div className="col col-label">
                                         <button
-                                            className={sortType == "salaryUp" ? "sort-btn up" : sortType == "salaryDown" ? "sort-btn down" : "sort-btn"}
+                                            className={sortType === "salaryUp" ? "sort-btn up" : sortType === "salaryDown" ? "sort-btn down" : "sort-btn"}
                                             onClick={() => {
-                                                setSortType(sortType == "salaryUp" ? "salaryDown" : "salaryUp");
-                                                sortTable(sortType == "salaryUp" ? "salaryDown" : "salaryUp");
+                                                setSortType(sortType === "salaryUp" ? "salaryDown" : "salaryUp");
+                                                // sortTable(sortType === "salaryUp" ? "salaryDown" : "salaryUp");
                                             }}>
                                             Salary
                                             <SortArrows />
@@ -198,24 +203,24 @@ const Main = () => {
 
                                     <div className="col col-label">
                                         <button
-                                            className={sortType == "expUp" ? "sort-btn up" : sortType == "expDown" ? "sort-btn down" : "sort-btn"}
+                                            className={sortType === "expUp" ? "sort-btn up" : sortType === "expDown" ? "sort-btn down" : "sort-btn"}
                                             onClick={() => {
-                                                setSortType(sortType == "expUp" ? "expDown" : "expUp");
-                                                sortTable(sortType == "expUp" ? "expDown" : "expUp");
+                                                setSortType(sortType === "expUp" ? "expDown" : "expUp");
+                                                // sortTable(sortType === "expUp" ? "expDown" : "expUp");
                                             }}>
                                             Years of experience
                                             <SortArrows />
                                         </button>
                                     </div>
                                 </div>
-                                {rows.map((item, idx) => {
+                                {sortTable.map((item, idx) => {
                                     return (
                                         <div key={idx} className={`row  ${idx}`}>
                                             <div className="col date">{item["Date"]}</div>
-                                            <div className="col company">{item["Company"] == "" ? '""' : item["Company"]}</div>
+                                            <div className="col company">{item["Company"] === "" ? '""' : item["Company"]}</div>
                                             <div className="col position">{item["Position"]}</div>
                                             <div className="col salary">{item["Salary"]}</div>
-                                            <div className="col experience">{item["Years of experience"] == "" ? '""' : item["Years of experience"]}</div>
+                                            <div className="col experience">{item["Years of experience"] === "" ? '""' : item["Years of experience"]}</div>
                                         </div>
                                     )
                                 })}
@@ -233,7 +238,7 @@ const Main = () => {
                         return (
                         <div className="line-wrap fz14 c-black">
                             <div className="col">{titles[itemIdx]}</div>
-                            <div className="col">{item === "" ? "-" : item}</div>
+                            <div className="col">{item ==== "" ? "-" : item}</div>
                         </div>
                         )
                     })}

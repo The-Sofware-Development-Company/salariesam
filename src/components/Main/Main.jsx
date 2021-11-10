@@ -38,11 +38,19 @@ const Main = () => {
     return transformedData;
   };
 
+  const transformNumValues = (val) => {
+    return +val.split(",").join("");
+  };
+
+  const transformDateValues = (val) => {
+    return new Date(val["Date"]);
+  };
+
   const sortDates = (array) => {
     if (sortType === "dateUp") {
-      array.sort((a, b) => new Date(b["Date"]) - new Date(a["Date"]));
+      array.sort((a, b) => transformDateValues(b) - transformDateValues(a));
     } else {
-      array.sort((a, b) => new Date(a["Date"]) - new Date(b["Date"]));
+      array.sort((a, b) => transformDateValues(a) - transformDateValues(b));
     }
   };
 
@@ -57,11 +65,11 @@ const Main = () => {
   const sortNumberFields = (array, key) => {
     if (sortType === "salaryUp" || sortType === "expUp") {
       array.sort((a, b) =>
-        +a[key].split(",").join("") > +b[key].split(",").join("") ? 1 : -1
+        transformNumValues(a[key]) > transformNumValues(b[key]) ? 1 : -1
       );
     } else {
       array.sort((a, b) =>
-        +b[key].split(",").join("") > +a[key].split(",").join("") ? 1 : -1
+        transformNumValues(b[key]) > transformNumValues(a[key]) ? 1 : -1
       );
     }
   };
@@ -258,7 +266,6 @@ const Main = () => {
                     }
                     onClick={() => {
                       setSortType(sortType === "expUp" ? "expDown" : "expUp");
-                      // sortTable(sortType === "expUp" ? "expDown" : "expUp");
                     }}
                   >
                     Years of experience

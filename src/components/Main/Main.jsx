@@ -278,13 +278,13 @@ const Main = () => {
                   <div key={idx} className={`row  ${idx}`}>
                     <div className="col date">{item["Date"]}</div>
                     <div className="col company">
-                      {item["Company"] === "" ? '""' : item["Company"]}
+                      {item["Company"] === "" ? '' : item["Company"]}
                     </div>
                     <div className="col position">{item["Position"]}</div>
                     <div className="col salary">{item["Salary"]}</div>
                     <div className="col experience">
                       {item["Years of experience"] === ""
-                        ? '""'
+                        ? ''
                         : item["Years of experience"]}
                     </div>
                   </div>

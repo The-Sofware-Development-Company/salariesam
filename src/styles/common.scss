@@ -1,3 +1,5 @@
+@import './colors.scss';
+
 html, body {
 	font-size: 1rem;
 }
@@ -6,20 +8,30 @@ body {
 	font-family: 'Mulish', sans-serif;
 }
 
+button {
+	border: none;
+	background-color: transparent;
+	padding: 0;
+}
+
 .container {
 	width: 95%;
 	max-width: 1660px;
 	margin: 0 auto;
+	@media only screen and (max-width: 1800px) {
+		max-width: 1440px;
+	}
 }
 
 .btn {
 	display: inline-block;
 	height: 40px;
 	line-height: 40px;
-	padding: 16px 0;
+	padding: 0 16px;
 	border-radius: 4px;
 	font-size: 16px;
 	font-weight: 600;
+	text-decoration: none;
 	&.dark {
 		background-color: $aubergine;
 		color: $white;
@@ -33,5 +45,6 @@ body {
 	.icon {
 		display: inline-block;
 		margin-inline-end: 12px;
+		width: 20px;
 	}
 }

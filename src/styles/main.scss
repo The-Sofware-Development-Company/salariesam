@@ -1,15 +1,85 @@
 @import "reset.scss";
 @import "colors.scss";
 @import "mixins.scss";
-@import "zindexes.scss";
+@import "zIndexes.scss";
 @import "typography.scss";
 @import "common.scss";
 @import "utils.scss";
 
-.row {
-    display: flex;
+
+form {
+    width: 100%;
+    max-width: 374px;
+    flex: none;
+    @media only screen and (max-width: 992px) {
+        max-width: initial;
+        margin-top: 40px;
+    }
 }
 
-.col {
-    width: 25%;
+.input-wrapper {
+    position: relative;       
+    width: 100%;
+    .search-input {
+        height: 40px;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid $black100;
+        padding: 0 20px 0 44px;
+        transition: all 0.2s ease;
+        &::placeholder {
+            color: $black200;
+            font-size: 16px;
+        }
+        &:focus {
+            outline: none;
+            border-color: $black400;
+        }
+    }
+    .search-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 12px;
+        width: 22px;
+    }
+}
+
+.table {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.table-header {
+    height: 45px;
+}
+
+.col-label {
+    display: flex;
+    padding: 0 15px;
+}
+
+.sort-btn {
+    background: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: $black;
+    &.up {
+        .arrows-wrap {
+            svg:first-child path {
+                fill: $red;
+            }
+        }
+    }
+    &.down {
+        .arrows-wrap {
+            svg:last-child path {
+                fill: $red;
+            }
+        }
+    }
 }

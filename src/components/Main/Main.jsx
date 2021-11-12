@@ -6,7 +6,6 @@ import "./styles.scss";
 import About from "../About/About";
 import SortArrows from "../SortArrows/SortArrows";
 
-const titles = ["date", "company", "position", "salary", "years of experience"];
 let copyOfRows = [];
 
 const Main = () => {
@@ -25,7 +24,7 @@ const Main = () => {
 
   const transformData = (payload) => {
     const headers = payload[0];
-    const [first, ...data] = payload;
+    const [, ...data] = payload;
 
     const transformedData = data.map((item, index) => {
       let obj = {};
@@ -108,6 +107,8 @@ const Main = () => {
       case "expDown":
         sortNumberFields(result, "Years of experience");
         break;
+      default:
+        break;
     }
 
     return result;
@@ -160,7 +161,7 @@ const Main = () => {
               />
               <p>
                 Showing {rows.length} of{" "}
-                {copyOfRows.length != 0 ? copyOfRows.length : rows.length}{" "}
+                {copyOfRows.length !== 0 ? copyOfRows.length : rows.length}{" "}
                 entries
               </p>
             </div>
@@ -298,7 +299,7 @@ const Main = () => {
       )}
       <div className="container">
         <div className="mobile-items-container"></div>
-        <a href="" className="btn white" download>
+        <a href="/data.csv" className="btn white" download>
           <img src={downloadIcon} alt="Download" className="icon" />
           Download in .CSV
         </a>

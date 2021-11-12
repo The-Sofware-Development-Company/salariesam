@@ -1,11 +1,10 @@
-FROM node:16-alpine3.11 as build-step
+FROM node:16-alpine3.13 as build-step
 
 WORKDIR /app
 
-COPY package.json ./
-COPY yarn.lock ./
+COPY package*.json ./
 
-RUN yarn install --production
+RUN npm install
 
 COPY . .
 

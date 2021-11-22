@@ -5,12 +5,39 @@ import downloadIcon from "../../assets/download-icon.svg";
 import "./styles.scss";
 import About from "../About/About";
 import SortArrows from "../SortArrows/SortArrows";
+import i18n from "i18next";
+import { useTranslation, initReactI18next } from "react-i18next";
+import en_us from "../../resources/en-us.json";
+import hy_am from "../../resources/hy-am.json";
 
 let copyOfRows = [];
+
+i18n.use(initReactI18next).init({
+  resources: {
+    en: {
+      translation: {
+        ...en_us,
+      },
+    },
+    am: {
+      translation: {
+        ...hy_am,
+      },
+    },
+  },
+  lng: "en",
+  fallbackLng: "en",
+  interpolation: {
+    escapeValue: false,
+  },
+});
 
 const Main = () => {
   const [rows, setRows] = useState([]);
   const [sortType, setSortType] = useState();
+  const [language, setLanguage] = useState("am");
+
+  const { t } = useTranslation();
 
   useEffect(() => {
     fetch("./data.csv")
@@ -20,6 +47,7 @@ const Main = () => {
         setRows(transformData(json.data));
         copyOfRows = transformData(json.data);
       });
+    i18n.changeLanguage(language);
   }, []);
 
   const transformData = (payload) => {
@@ -145,26 +173,27 @@ const Main = () => {
             href="https://docs.google.com/forms/d/1M4ztN09EvaminyLIDH4rOgtnr0lW-AHEYXiThbpAZa0/viewform?edit_requested=true"
             className="btn dark"
           >
-            Submit my report
+            {t("submit-report")}
           </a>
           <form action="">
             <label htmlFor="search" hidden>
-              Search
+              {t("search")}
             </label>
             <div className="input-wrapper">
               <img className="search-icon" src={searchIcon} alt="Search" />
               <input
                 className="search-input"
                 type="text"
-                placeholder="Search"
+                placeholder={t("search")}
                 onChange={handleChange}
               />
-              <p>
-                Showing {rows.length} of{" "}
-                {copyOfRows.length !== 0 ? copyOfRows.length : rows.length}{" "}
-                entries
-              </p>
             </div>
+            <p>
+              {t("pagination", {
+                num: rows.length,
+                from: copyOfRows.length !== 0 ? copyOfRows.length : rows.length,
+              })}
+            </p>
           </form>
         </div>
       </div>
@@ -189,7 +218,7 @@ const Main = () => {
                       );
                     }}
                   >
-                    Date
+                    {t("date")}
                     <SortArrows />
                   </button>
                 </div>
@@ -209,7 +238,7 @@ const Main = () => {
                       );
                     }}
                   >
-                    Company
+                    {t("company")}
                     <SortArrows />
                   </button>
                 </div>
@@ -231,7 +260,7 @@ const Main = () => {
                       );
                     }}
                   >
-                    Position
+                    {t("position")}
                     <SortArrows />
                   </button>
                 </div>
@@ -251,7 +280,7 @@ const Main = () => {
                       );
                     }}
                   >
-                    Salary
+                    {t("salary")}
                     <SortArrows />
                   </button>
                 </div>
@@ -269,7 +298,7 @@ const Main = () => {
                       setSortType(sortType === "expUp" ? "expDown" : "expUp");
                     }}
                   >
-                    Years of experience
+                    {t("experience")}
                     <SortArrows />
                   </button>
                 </div>
@@ -279,13 +308,13 @@ const Main = () => {
                   <div key={idx} className={`row  ${idx}`}>
                     <div className="col date">{item["Date"]}</div>
                     <div className="col company">
-                      {item["Company"] === "" ? '' : item["Company"]}
+                      {item["Company"] === "" ? "" : item["Company"]}
                     </div>
                     <div className="col position">{item["Position"]}</div>
                     <div className="col salary">{item["Salary"]}</div>
                     <div className="col experience">
                       {item["Years of experience"] === ""
-                        ? ''
+                        ? ""
                         : item["Years of experience"]}
                     </div>
                   </div>
@@ -301,7 +330,7 @@ const Main = () => {
         <div className="mobile-items-container"></div>
         <a href="/data.csv" className="btn white" download>
           <img src={downloadIcon} alt="Download" className="icon" />
-          Download in .CSV
+          {t("download")}
         </a>
       </div>
     </main>

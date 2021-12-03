@@ -1,13 +1,44 @@
+@import "../../styles/colors.scss";
+
 .header {
-    height: 128px;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  .container {
     display: flex;
-    align-items: center;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
-    .logo {
-        width: 100%;
-        max-width: 590px;
-        @media only screen and (max-width: 992px) {
-            max-width: 90%;
-        }
+    justify-content: space-between;
+  }
+  .logo-container {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .logo {
+    width: 100%;
+    max-width: 30px;
+    // @media only screen and (max-width: 992px) {
+    //   max-width: 90%;
+    // }
+  }
+  .texts {
+    margin-left: 15px;
+    .title {
+      margin-bottom: 10px;
+      &:lang(hy) {
+        font-size: 20px;
+      }
     }
+    .subtitle {
+      &:lang(hy) {
+        font-size: 14px;
+      }
+    }
+  }
+  .change-lang {
+    &:hover {
+      color: $red;
+    }
+  }
 }

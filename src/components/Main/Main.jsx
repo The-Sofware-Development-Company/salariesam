@@ -5,37 +5,13 @@ import downloadIcon from "../../assets/download-icon.svg";
 import "./styles.scss";
 import About from "../About/About";
 import SortArrows from "../SortArrows/SortArrows";
-import i18n from "i18next";
-import { useTranslation, initReactI18next } from "react-i18next";
-import en_us from "../../resources/en-us.json";
-import hy_am from "../../resources/hy-am.json";
+import { useTranslation } from "react-i18next";
 
 let copyOfRows = [];
-
-i18n.use(initReactI18next).init({
-  resources: {
-    en: {
-      translation: {
-        ...en_us,
-      },
-    },
-    am: {
-      translation: {
-        ...hy_am,
-      },
-    },
-  },
-  lng: "en",
-  fallbackLng: "en",
-  interpolation: {
-    escapeValue: false,
-  },
-});
 
 const Main = () => {
   const [rows, setRows] = useState([]);
   const [sortType, setSortType] = useState();
-  const [language, setLanguage] = useState("am");
 
   const { t } = useTranslation();
 
@@ -47,7 +23,6 @@ const Main = () => {
         setRows(transformData(json.data));
         copyOfRows = transformData(json.data);
       });
-    i18n.changeLanguage(language);
   }, []);
 
   const transformData = (payload) => {

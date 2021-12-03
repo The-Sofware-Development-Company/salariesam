@@ -13,7 +13,7 @@ i18n.use(initReactI18next).init({
         ...en_us,
       },
     },
-    am: {
+    hy: {
       translation: {
         ...hy_am,
       },
@@ -27,12 +27,13 @@ i18n.use(initReactI18next).init({
 });
 
 const Header = () => {
-  const [language, setLanguage] = useState("am");
+  const [language, setLanguage] = useState("hy");
   const { t } = useTranslation();
 
   useEffect(() => {
     i18n.changeLanguage(language);
-  }, []);
+    document.documentElement.lang = language;
+  }, [language]);
 
   return (
     <header className="header">
@@ -46,7 +47,16 @@ const Header = () => {
             </h2>
           </div>
         </div>
-        <button className="fz16 fw600 c-black400 change-lang">English</button>
+        <button
+          className="fz16 fw600 c-black400 change-lang"
+          onClick={() => {
+            setLanguage((prev) => (prev === "en" ? "hy" : "en"));
+          }}
+        >
+          {
+            language === "hy" ? "English" : "Հայերեն"
+          }
+        </button>
       </div>
     </header>
   );

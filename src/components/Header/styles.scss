@@ -1,13 +1,57 @@
+@import "../../styles/colors.scss";
+
 .header {
-    height: 128px;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  .container {
     display: flex;
-    align-items: center;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
-    .logo {
-        width: 100%;
-        max-width: 590px;
-        @media only screen and (max-width: 992px) {
-            max-width: 90%;
-        }
+    justify-content: space-between;
+    @media only screen and (max-width: 1440px) {
+      max-width: 1300px;
     }
+  }
+  .logo-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+  .logo {
+    width: 100%;
+    max-width: 30px;
+  }
+  .texts {
+    margin: 0 15px;
+    .title {
+      margin-bottom: 10px;
+      @media only screen and (max-width: 780px) {
+        font-size: 26px;
+      }
+      @media only screen and (max-width: 600px) {
+        font-size: 20px;
+      }
+      &:lang(hy) {
+        @media only screen and (max-width: 480px) {
+          font-size: 15px;
+        }
+      }
+    }
+    .subtitle {
+      @media only screen and (max-width: 400px) {
+        font-size: 14px;
+      }
+      &:lang(hy) {
+        font-size: 14px;
+        @media only screen and (max-width: 480px) {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+  .change-lang {
+    &:hover {
+      color: $red;
+    }
+  }
 }

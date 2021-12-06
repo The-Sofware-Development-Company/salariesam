@@ -20,5 +20,6 @@
   "fill-in-form": "You fill-in a simple form and submit the data.",
   "thats-it": "That's it. No authentication or personal data needed.",
   "pagination": "Showing {{num}} of {{from}} entries",
-  "powered-by": "Powered by the SDC since 2019."
+  "powered-by": "Powered by the SDC since 2019.",
+  "No result": "No result"
 }

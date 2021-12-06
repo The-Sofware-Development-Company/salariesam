@@ -1,15 +1,15 @@
-@import '../../styles/colors.scss';
+@import "../../styles/colors.scss";
 
 .footer {
-    background-color: $white;
-    height: 50px;
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .sdc-logo {
-        margin-inline-end: 10px;
-        display: inline-block;
-    }   
+  background-color: $white;
+  padding: 14px 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sdc-logo {
+    margin-inline-end: 10px;
+    display: inline-block;
+  }
 }

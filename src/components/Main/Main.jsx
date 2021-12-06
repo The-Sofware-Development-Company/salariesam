@@ -5,8 +5,8 @@ import downloadIcon from "../../assets/download-icon.svg";
 import "./styles.scss";
 import About from "../About/About";
 import SortArrows from "../SortArrows/SortArrows";
-import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
+import i18n from "i18next";
 import en_us from "../../resources/en-us.json";
 import hy_am from "../../resources/hy-am.json";
 
@@ -165,7 +165,7 @@ const Main = () => {
   };
 
   return (
-    <main>
+    <main className={sortTable.length === 0 ? "no-result" : ""}>
       <About />
       <div className="container">
         <div className="form-btn-wrapper mt30">
@@ -175,7 +175,7 @@ const Main = () => {
           >
             {t("submit-report")}
           </a>
-          <form action="">
+          <form class="form" action="">
             <label htmlFor="search" hidden>
               {t("search")}
             </label>
@@ -188,7 +188,7 @@ const Main = () => {
                 onChange={handleChange}
               />
             </div>
-            <p>
+            <p className="fz14 fw400 c-black300 search-result-text">
               {t("pagination", {
                 num: rows.length,
                 from: copyOfRows.length !== 0 ? copyOfRows.length : rows.length,
@@ -199,9 +199,9 @@ const Main = () => {
       </div>
 
       {sortTable?.length > 0 ? (
-        <main>
+        <div>
           <div className="container">
-            <div className="table">
+            <div className="table lg">
               <div className="row table-header">
                 <div className="col col-label">
                   <button
@@ -303,35 +303,68 @@ const Main = () => {
                   </button>
                 </div>
               </div>
-              {sortTable.map((item, idx) => {
-                return (
-                  <div key={idx} className={`row  ${idx}`}>
-                    <div className="col date">{item["Date"]}</div>
-                    <div className="col company">
-                      {item["Company"] === "" ? "" : item["Company"]}
+              <div className="table-body">
+                {sortTable.map((item, idx) => {
+                  return (
+                    <div key={idx} className={`row  ${idx}`}>
+                      <div className="col date">{item["Date"]}</div>
+                      <div className="col company">
+                        {item["Company"] === "" ? "" : item["Company"]}
+                      </div>
+                      <div className="col position">{item["Position"]}</div>
+                      <div className="col salary">{item["Salary"]}</div>
+                      <div className="col experience">
+                        {item["Years of experience"] === ""
+                          ? ""
+                          : item["Years of experience"]}
+                      </div>
                     </div>
-                    <div className="col position">{item["Position"]}</div>
-                    <div className="col salary">{item["Salary"]}</div>
-                    <div className="col experience">
-                      {item["Years of experience"] === ""
-                        ? ""
-                        : item["Years of experience"]}
+                  );
+                })}
+              </div>
+            </div>
+            <div className="table-mobile">
+              {sortTable.map((mobileItem, mobIdx) => {
+                return (
+                  <div className="row fz14 fw400 c-black400">
+                    <div className="thead">
+                      <div>{t("date")}</div>
+                      <div>{t("company")}</div>
+                      <div>{t("position")}</div>
+                      <div>{t("salary")}</div>
+                      <div>{t("experience")}</div>
+                    </div>
+                    <div className="tbody">
+                      <div className="date">{mobileItem["Date"]}</div>
+                      <div className="company">
+                        {mobileItem["Company"] === ""
+                          ? "-"
+                          : mobileItem["Company"]}
+                      </div>
+                      <div className="position">{mobileItem["Position"]}</div>
+                      <div className="salary">{mobileItem["Salary"]}</div>
+                      <div className="experience">
+                        {mobileItem["Years of experience"] === ""
+                          ? "-"
+                          : mobileItem["Years of experience"]}
+                      </div>
                     </div>
                   </div>
                 );
               })}
             </div>
           </div>
-        </main>
+        </div>
       ) : (
-        <p>No result</p>
+        <div className="no-result-container">{t("No result")}</div>
       )}
       <div className="container">
-        <div className="mobile-items-container"></div>
-        <a href="/data.csv" className="btn white" download>
-          <img src={downloadIcon} alt="Download" className="icon" />
-          {t("download")}
-        </a>
+        <div className="btn-wrap">
+          <a href="/data.csv" className="btn white" download>
+            <img src={downloadIcon} alt="Download" className="icon" />
+            {t("download")}
+          </a>
+        </div>
       </div>
     </main>
   );

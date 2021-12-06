@@ -59,6 +59,7 @@ form {
 
 .table {
   border: 1px solid rgba(0, 0, 0, 0.15);
+  margin-top: 40px;
   @media only screen and (max-width: 991px) {
     &.lg {
       display: none;

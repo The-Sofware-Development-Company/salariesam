@@ -5,13 +5,37 @@ import downloadIcon from "../../assets/download-icon.svg";
 import "./styles.scss";
 import About from "../About/About";
 import SortArrows from "../SortArrows/SortArrows";
-import { useTranslation } from "react-i18next";
+import { useTranslation, initReactI18next } from "react-i18next";
+import i18n from "i18next";
+import en_us from "../../resources/en-us.json";
+import hy_am from "../../resources/hy-am.json";
 
 let copyOfRows = [];
+
+i18n.use(initReactI18next).init({
+  resources: {
+    en: {
+      translation: {
+        ...en_us,
+      },
+    },
+    am: {
+      translation: {
+        ...hy_am,
+      },
+    },
+  },
+  lng: "en",
+  fallbackLng: "en",
+  interpolation: {
+    escapeValue: false,
+  },
+});
 
 const Main = () => {
   const [rows, setRows] = useState([]);
   const [sortType, setSortType] = useState();
+  const [language, setLanguage] = useState("am");
 
   const { t } = useTranslation();
 
@@ -23,6 +47,7 @@ const Main = () => {
         setRows(transformData(json.data));
         copyOfRows = transformData(json.data);
       });
+    i18n.changeLanguage(language);
   }, []);
 
   const transformData = (payload) => {
@@ -174,7 +199,7 @@ const Main = () => {
       </div>
 
       {sortTable?.length > 0 ? (
-        <main>
+        <div>
           <div className="container">
             <div className="table lg">
               <div className="row table-header">
@@ -329,7 +354,7 @@ const Main = () => {
               })}
             </div>
           </div>
-        </main>
+        </div>
       ) : (
         <div className="no-result-container">{t("No result")}</div>
       )}

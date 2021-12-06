@@ -8,31 +8,45 @@
   .container {
     display: flex;
     justify-content: space-between;
+    @media only screen and (max-width: 1440px) {
+      max-width: 1300px;
+    }
   }
   .logo-container {
     width: 100%;
-    max-width: 650px;
     display: flex;
     align-items: flex-start;
   }
   .logo {
     width: 100%;
     max-width: 30px;
-    // @media only screen and (max-width: 992px) {
-    //   max-width: 90%;
-    // }
   }
   .texts {
-    margin-left: 15px;
+    margin: 0 15px;
     .title {
       margin-bottom: 10px;
+      @media only screen and (max-width: 780px) {
+        font-size: 26px;
+      }
+      @media only screen and (max-width: 600px) {
+        font-size: 20px;
+      }
       &:lang(hy) {
         font-size: 20px;
+        @media only screen and (max-width: 480px) {
+          font-size: 15px;
+        }
       }
     }
     .subtitle {
+      @media only screen and (max-width: 400px) {
+        font-size: 14px;
+      }
       &:lang(hy) {
         font-size: 14px;
+        @media only screen and (max-width: 480px) {
+          font-size: 11px;
+        }
       }
     }
   }

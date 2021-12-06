@@ -53,9 +53,7 @@ const Header = () => {
             setLanguage((prev) => (prev === "en" ? "hy" : "en"));
           }}
         >
-          {
-            language === "hy" ? "English" : "Հայերեն"
-          }
+          {language === "hy" ? "En" : "Հայ"}
         </button>
       </div>
     </header>

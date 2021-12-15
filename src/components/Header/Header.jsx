@@ -31,7 +31,12 @@ const Header = () => {
   const { t } = useTranslation();
 
   useEffect(() => {
+    setLanguage(localStorage.getItem("lang") || "hy");
+  }, []);
+
+  useEffect(() => {
     i18n.changeLanguage(language);
+    localStorage.setItem("lang", language);
     document.documentElement.lang = language;
   }, [language]);
 

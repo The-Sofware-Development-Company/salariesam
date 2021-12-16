@@ -16,7 +16,6 @@ const About = () => {
         {t("license")}
         <a href="">{t("download-license")}</a>
       </p>
-      <p className="fz16 lh18 c-black300">{t("license")}</p>
 
       <p className="fz16 lh18 c-black300 mt30">{t("how-this-work")}</p>
       <ol className="ol">

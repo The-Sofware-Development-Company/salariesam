@@ -12,13 +12,17 @@ const About = () => {
       <p className="fz16 lh18 c-black300">{t("about-reported-data")}</p>
       <p className="fz16 lh18 c-black300">{t("about-reported-salary")}</p>
       <p className="fz16 lh18 c-black300">{t("remove-data")}</p>
-      <p className="fz16 lh18 c-black300">{t("license")}</p>
+      <p className="fz16 lh18 c-black300">
+        {t("license")}
+        <a href="">{t("download-license")}</a>
+      </p>
 
       <p className="fz16 lh18 c-black300 mt30">{t("how-this-work")}</p>
       <ol className="ol">
         <li className="li fz16 lh18 c-black300">{t("click-on-submit")}</li>
         <li className="li fz16 lh18 c-black300">{t("fill-in-form")}</li>
       </ol>
+
       <p className="fz16 lh18 c-black300">{t("thats-it")}</p>
     </div>
   );

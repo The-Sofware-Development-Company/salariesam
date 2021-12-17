@@ -14,7 +14,9 @@ const About = () => {
       <p className="fz16 lh18 c-black300">{t("remove-data")}</p>
       <p className="fz16 lh18 c-black300">
         {t("license")}
-        <a href="">{t("download-license")}</a>
+        <a href="https://opendatacommons.org/licenses/by/1-0/" target="_blank">
+          {t("download-license")}
+        </a>
       </p>
 
       <p className="fz16 lh18 c-black300 mt30">{t("how-this-work")}</p>

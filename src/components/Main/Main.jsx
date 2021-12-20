@@ -45,7 +45,7 @@ const Main = () => {
 
   const transformTextFields = (val) => {
     return val.toLowerCase();
-  }
+  };
 
   const transformDateValues = (val) => {
     return new Date(val["Date"]);
@@ -61,32 +61,34 @@ const Main = () => {
 
   const sortTextFields = (array, key) => {
     if (sortType === "companyUp" || sortType === "positionUp") {
-      array.sort((a, b) => (transformTextFields(a[key]) > transformTextFields(b[key]) ? 1 : -1));
+      array.sort((a, b) =>
+        transformTextFields(a[key]) > transformTextFields(b[key]) ? 1 : -1
+      );
     } else {
-      array.sort((a, b) => (transformTextFields(b[key]) > transformTextFields(a[key]) ? 1 : -1));
+      array.sort((a, b) =>
+        transformTextFields(b[key]) > transformTextFields(a[key]) ? 1 : -1
+      );
     }
   };
 
   const sortNumberFields = (array, key) => {
     if (sortType === "salaryUp" || sortType === "expUp") {
       array.sort((a, b) => {
-        if(a[key] === ''){
+        if (a[key] === "") {
           return -1;
-        }
-        else if(b[key] === ''){
+        } else if (b[key] === "") {
           return 1;
         }
         return transformNumValues(a[key]) > transformNumValues(b[key]) ? 1 : -1;
       });
     } else {
       array.sort((a, b) => {
-        if(a === ''){
+        if (a === "") {
           return -1;
-        }
-        else if(b === ''){
+        } else if (b === "") {
           return 1;
         }
-        return transformNumValues(b[key]) > transformNumValues(a[key]) ? 1 : -1
+        return transformNumValues(b[key]) > transformNumValues(a[key]) ? 1 : -1;
       });
     }
   };
@@ -157,7 +159,7 @@ const Main = () => {
   return (
     <main className={sortTable.length === 0 ? "no-result" : ""}>
       <About />
-      <div className="container">
+      <div className="c-container">
         <div className="form-btn-wrapper mt30">
           <a
             href="https://docs.google.com/forms/d/1M4ztN09EvaminyLIDH4rOgtnr0lW-AHEYXiThbpAZa0/viewform?edit_requested=true"
@@ -190,7 +192,7 @@ const Main = () => {
 
       {sortTable?.length > 0 ? (
         <div>
-          <div className="container">
+          <div className="c-container">
             <div className="table lg">
               <div className="row table-header">
                 <div className="col col-label">
@@ -348,7 +350,7 @@ const Main = () => {
       ) : (
         <div className="no-result-container">{t("No result")}</div>
       )}
-      <div className="container">
+      <div className="c-container">
         <div className="btn-wrap">
           <a href="/data.csv" className="btn white" download>
             <img src={downloadIcon} alt="Download" className="icon" />

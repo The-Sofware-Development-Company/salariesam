@@ -25,7 +25,7 @@ form {
     width: 100%;
     border-radius: 4px;
     border: 1px solid $black100;
-    padding: 0 20px 0 44px;
+    padding: 2px 20px 0 44px;
     transition: all 0.2s ease;
     &::placeholder {
       color: $black200;
@@ -53,7 +53,7 @@ form {
   @media only screen and (max-width: 991px) {
     right: initial;
     left: 0;
-    bottom: -30px;
+    bottom: -24px;
   }
 }
 
@@ -91,7 +91,7 @@ form {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   color: $black;
   &.up {
@@ -118,6 +118,7 @@ form {
   margin-top: 20px;
   @media only screen and (max-width: 991px) {
     display: block;
+    margin-top: 62px;
   }
   .row {
     display: flex;

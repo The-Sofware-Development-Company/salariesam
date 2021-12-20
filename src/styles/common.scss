@@ -17,6 +17,20 @@ button {
   font-family: inherit;
 }
 
+.c-container {
+  width: 100%;
+  padding: 0 150px;
+  @media only screen and (max-width: 1199px) {
+    padding: 0 16px;
+  }
+  @media only screen and (max-width: 991px) {
+    padding: 0 40px;
+  }
+  @media only screen and (max-width: 576px) {
+    padding: 0 33px;
+  }
+}
+
 .container {
   width: 95%;
   max-width: 1660px;

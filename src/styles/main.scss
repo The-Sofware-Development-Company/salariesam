@@ -11,7 +11,7 @@ form {
   max-width: 374px;
   flex: none;
   position: relative;
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 993px) {
     max-width: initial;
     margin-top: 40px;
   }
@@ -27,9 +27,12 @@ form {
     border: 1px solid $black100;
     padding: 2px 20px 0 44px;
     transition: all 0.2s ease;
+    font-family: "Mulish", sans-serif;
     &::placeholder {
       color: $black200;
       font-size: 16px;
+      font-family: "Mulish", sans-serif;
+      font-weight: 300;
     }
     &:focus {
       outline: none;
@@ -50,7 +53,7 @@ form {
   position: absolute;
   right: 2px;
   bottom: -27px;
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 768px) {
     right: initial;
     left: 0;
     bottom: -24px;

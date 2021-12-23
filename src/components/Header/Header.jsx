@@ -53,7 +53,11 @@ const Header = () => {
           </div>
         </div>
         <button
-          className="fz16 fw600 c-black400 change-lang"
+          className={
+            language === "hy"
+              ? "mulish fz16 fw600 c-black400 change-lang"
+              : "noto fz16 fw600 c-black400 change-lang"
+          }
           onClick={() => {
             setLanguage((prev) => (prev === "en" ? "hy" : "en"));
           }}

@@ -14,7 +14,11 @@ const About = () => {
       <p className="fz16 lh18 c-black300">{t("remove-data")}</p>
       <p className="fz16 lh18 c-black300">
         {t("license-first-part")}
-        <a href="https://opendatacommons.org/licenses/by/1-0/" target="_blank">
+        <a
+          href="https://opendatacommons.org/licenses/by/1-0/"
+          target="_blank"
+          className="mulish"
+        >
           Open Data Commons Attribution License (ODC-By) v1
         </a>
         {t("license-second-part")}

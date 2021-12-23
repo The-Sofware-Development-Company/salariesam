@@ -295,7 +295,7 @@ const Main = () => {
                   </button>
                 </div>
               </div>
-              <div className="table-body">
+              <div className="table-body mulish">
                 {sortTable.map((item, idx) => {
                   return (
                     <div key={idx} className={`row  ${idx}`}>

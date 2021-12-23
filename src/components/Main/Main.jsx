@@ -299,7 +299,7 @@ const Main = () => {
                 {sortTable.map((item, idx) => {
                   return (
                     <div key={idx} className={`row  ${idx}`}>
-                      <div className="col date">{item["Date"]}</div>
+                      <div className="col date mulish">{item["Date"]}</div>
                       <div className="col company">
                         {item["Company"] === "" ? "" : item["Company"]}
                       </div>

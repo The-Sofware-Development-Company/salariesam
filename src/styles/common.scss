@@ -6,10 +6,16 @@ body {
 }
 
 body {
-  font-family: "Mulish", sans-serif;
+  &:lang(en) {
+    font-family: "Mulish", sans-serif;
+  }
   &:lang(hy) {
     font-family: "Noto Sans Armenian", sans-serif;
   }
+}
+
+.mulish {
+  font-family: "Mulish", sans-serif !important;
 }
 
 button {

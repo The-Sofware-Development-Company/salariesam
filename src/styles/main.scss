@@ -11,7 +11,7 @@ form {
   max-width: 374px;
   flex: none;
   position: relative;
-  @media only screen and (max-width: 993px) {
+  @media only screen and (max-width: 768px) {
     max-width: initial;
     margin-top: 40px;
   }

@@ -6,7 +6,19 @@ body {
 }
 
 body {
-  font-family: "Mulish", sans-serif;
+  &:lang(en) {
+    font-family: "Mulish", sans-serif;
+  }
+  &:lang(hy) {
+    font-family: "Noto Sans Armenian", sans-serif;
+  }
+}
+
+.mulish {
+  font-family: "Mulish", sans-serif !important;
+}
+.noto {
+  font-family: "Noto Sans Armenian", sans-serif !important;
 }
 
 button {
@@ -14,6 +26,21 @@ button {
   background-color: transparent;
   padding: 0;
   cursor: pointer;
+  font-family: inherit;
+}
+
+.c-container {
+  width: 100%;
+  padding: 0 150px;
+  @media only screen and (max-width: 1199px) {
+    padding: 0 16px;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 0 40px;
+  }
+  @media only screen and (max-width: 576px) {
+    padding: 0 33px;
+  }
 }
 
 .container {
@@ -50,6 +77,7 @@ button {
     color: $black300;
     display: inline-flex;
     justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.15);
   }
   .icon {
     display: inline-block;

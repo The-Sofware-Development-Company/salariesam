@@ -31,24 +31,33 @@ const Header = () => {
   const { t } = useTranslation();
 
   useEffect(() => {
+    setLanguage(localStorage.getItem("lang") || "hy");
+  }, []);
+
+  useEffect(() => {
     i18n.changeLanguage(language);
+    localStorage.setItem("lang", language);
     document.documentElement.lang = language;
   }, [language]);
 
   return (
     <header className="header">
-      <div className="container">
+      <div className="h-container">
         <div className="logo-container">
           <img src={logo} alt="logo" className="logo" />
           <div className="texts">
-            <h1 className="fz36 fw400 title">{t("title")}</h1>
-            <h2 className="fz18 fw600 subtitle">
+            <h1 className="fz36 fw400 title c-black300">{t("title")}</h1>
+            <h2 className="fz18 fw600 subtitle c-black300">
               {t("help-us-to-support-our-community")}
             </h2>
           </div>
         </div>
         <button
-          className="fz16 fw600 c-black400 change-lang"
+          className={
+            language === "hy"
+              ? "mulish fz16 fw600 c-black400 change-lang"
+              : "noto fz16 fw600 c-black400 change-lang"
+          }
           onClick={() => {
             setLanguage((prev) => (prev === "en" ? "hy" : "en"));
           }}

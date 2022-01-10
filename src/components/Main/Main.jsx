@@ -5,38 +5,13 @@ import downloadIcon from "../../assets/download-icon.svg";
 import "./styles.scss";
 import About from "../About/About";
 import SortArrows from "../SortArrows/SortArrows";
-import { useTranslation, initReactI18next } from "react-i18next";
-import i18n from "i18next";
-import en_us from "../../resources/en-us.json";
-import hy_am from "../../resources/hy-am.json";
+import { useTranslation } from "react-i18next";
 
 let copyOfRows = [];
 
-i18n.use(initReactI18next).init({
-  resources: {
-    en: {
-      translation: {
-        ...en_us,
-      },
-    },
-    am: {
-      translation: {
-        ...hy_am,
-      },
-    },
-  },
-  lng: "en",
-  fallbackLng: "en",
-  interpolation: {
-    escapeValue: false,
-  },
-});
-
 const Main = () => {
   const [rows, setRows] = useState([]);
-  const [sortType, setSortType] = useState();
-  const [language, setLanguage] = useState("am");
-
+  const [sortType, setSortType] = useState("dateUp");
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -47,7 +22,6 @@ const Main = () => {
         setRows(transformData(json.data));
         copyOfRows = transformData(json.data);
       });
-    i18n.changeLanguage(language);
   }, []);
 
   const transformData = (payload) => {
@@ -69,6 +43,10 @@ const Main = () => {
     return +val.split(",").join("");
   };
 
+  const transformTextFields = (val) => {
+    return val.toLowerCase();
+  };
+
   const transformDateValues = (val) => {
     return new Date(val["Date"]);
   };
@@ -83,21 +61,35 @@ const Main = () => {
 
   const sortTextFields = (array, key) => {
     if (sortType === "companyUp" || sortType === "positionUp") {
-      array.sort((a, b) => (a[key] > b[key] ? 1 : -1));
+      array.sort((a, b) =>
+        transformTextFields(a[key]) > transformTextFields(b[key]) ? 1 : -1
+      );
     } else {
-      array.sort((a, b) => (b[key] > a[key] ? 1 : -1));
+      array.sort((a, b) =>
+        transformTextFields(b[key]) > transformTextFields(a[key]) ? 1 : -1
+      );
     }
   };
 
   const sortNumberFields = (array, key) => {
     if (sortType === "salaryUp" || sortType === "expUp") {
-      array.sort((a, b) =>
-        transformNumValues(a[key]) > transformNumValues(b[key]) ? 1 : -1
-      );
+      array.sort((a, b) => {
+        if (a[key] === "") {
+          return -1;
+        } else if (b[key] === "") {
+          return 1;
+        }
+        return transformNumValues(a[key]) > transformNumValues(b[key]) ? 1 : -1;
+      });
     } else {
-      array.sort((a, b) =>
-        transformNumValues(b[key]) > transformNumValues(a[key]) ? 1 : -1
-      );
+      array.sort((a, b) => {
+        if (a === "") {
+          return -1;
+        } else if (b === "") {
+          return 1;
+        }
+        return transformNumValues(b[key]) > transformNumValues(a[key]) ? 1 : -1;
+      });
     }
   };
 
@@ -121,7 +113,7 @@ const Main = () => {
         sortTextFields(result, "Position");
         break;
       case "positionDown":
-        sortTextFields(result, "Company");
+        sortTextFields(result, "Position");
         break;
       case "salaryUp":
         sortNumberFields(result, "Salary");
@@ -167,7 +159,7 @@ const Main = () => {
   return (
     <main className={sortTable.length === 0 ? "no-result" : ""}>
       <About />
-      <div className="container">
+      <div className="c-container">
         <div className="form-btn-wrapper mt30">
           <a
             href="https://docs.google.com/forms/d/1M4ztN09EvaminyLIDH4rOgtnr0lW-AHEYXiThbpAZa0/viewform?edit_requested=true"
@@ -200,7 +192,7 @@ const Main = () => {
 
       {sortTable?.length > 0 ? (
         <div>
-          <div className="container">
+          <div className="c-container">
             <div className="table lg">
               <div className="row table-header">
                 <div className="col col-label">
@@ -303,11 +295,11 @@ const Main = () => {
                   </button>
                 </div>
               </div>
-              <div className="table-body">
+              <div className="table-body mulish">
                 {sortTable.map((item, idx) => {
                   return (
                     <div key={idx} className={`row  ${idx}`}>
-                      <div className="col date">{item["Date"]}</div>
+                      <div className="col date mulish">{item["Date"]}</div>
                       <div className="col company">
                         {item["Company"] === "" ? "" : item["Company"]}
                       </div>
@@ -358,7 +350,7 @@ const Main = () => {
       ) : (
         <div className="no-result-container">{t("No result")}</div>
       )}
-      <div className="container">
+      <div className="c-container">
         <div className="btn-wrap">
           <a href="/data.csv" className="btn white" download>
             <img src={downloadIcon} alt="Download" className="icon" />

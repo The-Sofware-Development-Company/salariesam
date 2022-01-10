@@ -12,7 +12,6 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-i18next": "^11.14.2",
-    "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -41,7 +40,9 @@
   },
   "devDependencies": {
     "eslint-config-react": "^1.1.7",
+    "eslint-config-react-app": "^6.0.0",
     "eslint-plugin-jest": "^25.3.0",
-    "prettier": "2.4.1"
+    "prettier": "2.4.1",
+    "react-scripts": "^4.0.3"
   }
 }

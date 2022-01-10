@@ -18,14 +18,13 @@ main {
 
 .ol {
   padding-left: 18px;
-  max-width: 400px;
 }
 
 .form-btn-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -44,6 +43,7 @@ main {
 .table {
   background-color: $white;
   border-radius: 6px;
+  overflow: hidden;
 }
 
 .table-body {

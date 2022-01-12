@@ -18,6 +18,7 @@ const About = () => {
           href="https://opendatacommons.org/licenses/by/1-0/"
           target="_blank"
           className="mulish"
+          rel="noreferrer"
         >
           Open Data Commons Attribution License (ODC-By) v1
         </a>

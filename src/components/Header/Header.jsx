@@ -46,7 +46,7 @@ const Header = () => {
         <div className="logo-container">
           <img src={logo} alt="logo" className="logo" />
           <div className="texts">
-            <h1 className="fz36 fw400 title c-black300">{t("title")}</h1>
+            <h1 className="fz28 fw400 title c-black300">{t("title")}</h1>
             <h2 className="fz18 fw600 subtitle c-black300">
               {t("help-us-to-support-our-community")}
             </h2>

@@ -318,7 +318,7 @@ const Main = () => {
             <div className="table-mobile">
               {sortTable.map((mobileItem, mobIdx) => {
                 return (
-                  <div className="row fz14 fw400 c-black400">
+                  <div className="row fz14 fw400 c-black400" key={mobIdx}>
                     <div className="thead">
                       <div>{t("date")}</div>
                       <div>{t("company")}</div>

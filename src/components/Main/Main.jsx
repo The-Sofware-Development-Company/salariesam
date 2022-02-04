@@ -160,6 +160,17 @@ const Main = () => {
     }
   };
 
+  const makeWithZero = (dateString) =>
+    parseInt(dateString) < 10 ? `0${dateString}` : dateString;
+
+  const swapDayAndMonth = (dateTimeString) => {
+    const [first, second, third] = dateTimeString.split("/");
+    const newFirst = makeWithZero(second);
+    const newSecond = makeWithZero(first);
+    const newDate = [newFirst, newSecond, third].join("/");
+    return newDate;
+  };
+
   return (
     <main className={sortTable.length === 0 ? "no-result" : ""}>
       <About />
@@ -305,7 +316,9 @@ const Main = () => {
                 {sortTable.map((item, idx) => {
                   return (
                     <div key={idx} className={`row  ${idx}`}>
-                      <div className="col date mulish">{item["Date"]}</div>
+                      <div className="col date mulish">
+                        {swapDayAndMonth(item["Date"])}
+                      </div>
                       <div className="col company">
                         {item["Company"] === "" ? "" : item["Company"]}
                       </div>

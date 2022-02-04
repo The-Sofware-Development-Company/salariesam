@@ -7,12 +7,12 @@ const About = () => {
 
   return (
     <div className="c-container">
-      <p className="fz16 lh18 c-black300">{t("about-tool")}</p>
-      <p className="fz16 lh18 c-black300">{t("about-salaries")}</p>
-      <p className="fz16 lh18 c-black300">{t("about-reported-data")}</p>
-      <p className="fz16 lh18 c-black300">{t("about-reported-salary")}</p>
-      <p className="fz16 lh18 c-black300">{t("remove-data")}</p>
-      <p className="fz16 lh18 c-black300">
+      <p className="fz14 lh18 c-black300">{t("about-tool")}</p>
+      <p className="fz14 lh18 c-black300">{t("about-salaries")}</p>
+      <p className="fz14 lh18 c-black300">{t("about-reported-data")}</p>
+      <p className="fz14 lh18 c-black300">{t("about-reported-salary")}</p>
+      <p className="fz14 lh18 c-black300">{t("remove-data")}</p>
+      <p className="fz14 lh18 c-black300">
         {t("license-first-part")}
         <a
           href="https://opendatacommons.org/licenses/by/1-0/"
@@ -28,13 +28,13 @@ const About = () => {
         </a>
       </p>
 
-      <p className="fz16 lh18 c-black300 mt30">{t("how-this-work")}</p>
+      <p className="fz14 lh18 c-black300 mt30">{t("how-this-work")}</p>
       <ol className="ol">
-        <li className="li fz16 lh18 c-black300">{t("click-on-submit")}</li>
-        <li className="li fz16 lh18 c-black300">{t("fill-in-form")}</li>
+        <li className="li fz14 lh18 c-black300">{t("click-on-submit")}</li>
+        <li className="li fz14 lh18 c-black300">{t("fill-in-form")}</li>
       </ol>
 
-      <p className="fz16 lh18 c-black300">{t("thats-it")}</p>
+      <p className="fz14 lh18 c-black300">{t("thats-it")}</p>
     </div>
   );
 };

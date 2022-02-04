@@ -34,7 +34,6 @@
   .texts {
     margin: 0 15px;
     .title {
-      margin-bottom: 10px;
       @media only screen and (max-width: 780px) {
         font-size: 26px;
       }
@@ -49,7 +48,7 @@
     }
     .subtitle {
       margin-left: 2px;
-      margin-top: 14px;
+      margin-top: 8px;
       @media only screen and (max-width: 400px) {
         font-size: 14px;
       }

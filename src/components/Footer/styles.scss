@@ -3,10 +3,11 @@
 .footer {
   background-color: $white;
   padding: 14px 0;
-  .container {
+  .link {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
   }
   .sdc-logo {
     margin-inline-end: 10px;

@@ -7,7 +7,7 @@ const About = () => {
 
   return (
     <div className="c-container">
-      <p className="fz46 lh18 c-black300">{t("about-tool")}</p>
+      <p className="fz14 lh18 c-black300">{t("about-tool")}</p>
       <p className="fz14 lh18 c-black300">{t("about-salaries")}</p>
       <p className="fz14 lh18 c-black300">{t("about-reported-data")}</p>
       <p className="fz14 lh18 c-black300">{t("about-reported-salary")}</p>

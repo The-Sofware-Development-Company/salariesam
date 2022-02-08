@@ -175,7 +175,7 @@ const Main = () => {
     <main className={sortTable.length === 0 ? "no-result" : ""}>
       <About />
       <div className="c-container">
-        <div className="form-btn-wrapper mt30">
+        <div className="form-btn-wrapper mt20">
           <a
             href="https://docs.google.com/forms/d/1M4ztN09EvaminyLIDH4rOgtnr0lW-AHEYXiThbpAZa0/viewform?edit_requested=true"
             className="btn dark"
@@ -197,7 +197,7 @@ const Main = () => {
                 onChange={handleChange}
               />
             </div>
-            <p className="fz14 fw400 c-black300 search-result-text">
+            <p className="fz12 fw400 c-black300 search-result-text">
               {t("pagination", {
                 num: rows.length,
                 from: copyOfRows.length !== 0 ? copyOfRows.length : rows.length,

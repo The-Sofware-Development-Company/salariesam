@@ -138,6 +138,10 @@ const Main = () => {
     searching(e.target.value);
   }, []);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   const searching = (value) => {
     setRows(copyOfRows);
 
@@ -156,6 +160,17 @@ const Main = () => {
     }
   };
 
+  const makeWithZero = (dateString) =>
+    parseInt(dateString) < 10 ? `0${dateString}` : dateString;
+
+  const swapDayAndMonth = (dateTimeString) => {
+    const [first, second, third] = dateTimeString.split("/");
+    const newFirst = makeWithZero(second);
+    const newSecond = makeWithZero(first);
+    const newDate = [newFirst, newSecond, third].join("/");
+    return newDate;
+  };
+
   return (
     <main className={sortTable.length === 0 ? "no-result" : ""}>
       <About />
@@ -164,10 +179,12 @@ const Main = () => {
           <a
             href="https://docs.google.com/forms/d/1M4ztN09EvaminyLIDH4rOgtnr0lW-AHEYXiThbpAZa0/viewform?edit_requested=true"
             className="btn dark"
+            target="_blank"
+            rel="noreferrer"
           >
             {t("submit-report")}
           </a>
-          <form class="form" action="">
+          <form className="form" action="" onSubmit={handleSubmit}>
             <label htmlFor="search" hidden>
               {t("search")}
             </label>
@@ -299,7 +316,9 @@ const Main = () => {
                 {sortTable.map((item, idx) => {
                   return (
                     <div key={idx} className={`row  ${idx}`}>
-                      <div className="col date mulish">{item["Date"]}</div>
+                      <div className="col date mulish">
+                        {swapDayAndMonth(item["Date"])}
+                      </div>
                       <div className="col company">
                         {item["Company"] === "" ? "" : item["Company"]}
                       </div>
@@ -318,7 +337,7 @@ const Main = () => {
             <div className="table-mobile">
               {sortTable.map((mobileItem, mobIdx) => {
                 return (
-                  <div className="row fz14 fw400 c-black400">
+                  <div className="row fz14 fw400 c-black400" idx={mobIdx}>
                     <div className="thead">
                       <div>{t("date")}</div>
                       <div>{t("company")}</div>

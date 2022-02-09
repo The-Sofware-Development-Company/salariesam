@@ -30,7 +30,6 @@ const About = () => {
       <span className="li fz14 lh18 c-black300">
         <b>&nbsp; 2.</b> {t("step2")}
       </span>
-      <p className="li fz14 lh18 c-black300">{t("steps1")}</p>
     </div>
   );
 };

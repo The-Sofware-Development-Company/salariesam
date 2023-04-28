@@ -17,5 +17,9 @@
   "step2": "Լրացրեք հարցման ձեւը և ուղարկեք տվյալները: Այսքանը։ Նույնականացում կամ անձնական տվյալներ չեն պահանջվում:",
   "pagination": "Ցուցադրվում է {{num}} գրառում {{from}}-ից",
   "powered-by": "Powered by the SDC since 2019",
-  "No result": "Արդյունք չկա"
+  "No result": "Արդյունք չկա",
+  "indicates required": "անհրաժեշտ է",
+  "Email Address": "Էլ. փոստի հասցե",
+  "subscribe": "Բաժանորդագրվել",
+  "Receive an email when new salary reports are available. Not more than once per week.": "Ստացեք նամակ, երբ հասանելի լինեն աշխատավարձի նոր հաշվետվությունները: Ոչ ավելի, քան շաբաթական մեկ անգամ:"
 }

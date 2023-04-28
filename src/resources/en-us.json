@@ -17,5 +17,9 @@
   "step2": "You fill-in a simple form and submit the data. That's it. No authentication or personal data needed.",
   "pagination": "Showing {{num}} of {{from}} entries",
   "powered-by": "Powered by the SDC since 2019",
-  "No result": "No result"
+  "No result": "No result",
+  "indicates required": "indicates required",
+  "Email Address": "Email Address",
+  "subscribe": "Subscribe",
+  "Receive an email when new salary reports are available. Not more than once per week.": "Receive an email when new salary reports are available. Not more than once per week."
 }

@@ -6,6 +6,7 @@ import "./styles.scss";
 import About from "../About/About";
 import SortArrows from "../SortArrows/SortArrows";
 import { useTranslation } from "react-i18next";
+import MailChimp from "./MailChimp";
 
 let copyOfRows = [];
 
@@ -376,6 +377,9 @@ const Main = () => {
             {t("download")}
           </a>
         </div>
+      </div>
+      <div className="c-container">
+        <MailChimp />
       </div>
     </main>
   );

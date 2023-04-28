@@ -7,8 +7,8 @@ const About = () => {
 
   return (
     <div className="c-container">
-      <p className="fz14 lh18 c-black300 d-i-block">{t("about-tool")}</p>
-      <p className="fz14 lh18 c-black300 d-i-block">
+      <span className="fz14 lh18 c-black300">{t("about-tool")}</span>
+      <span className="fz14 lh18 c-black300">
         <a
           href="https://opendatacommons.org/licenses/by/1-0/"
           target="_blank"
@@ -21,7 +21,7 @@ const About = () => {
         <a href="/data.csv" download>
           {t("download-license")}
         </a>
-      </p>
+      </span>
 
       <p className="fz14 lh18 c-black300 mt10">{t("how-this-work")}</p>
       <span className="li fz14 lh18 c-black300">

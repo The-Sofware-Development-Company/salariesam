@@ -9,13 +9,12 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-          <a
-            className="link"
-            href="https://sdc.am/"
-            target="_blank"
-            rel="noreferrer"
-          >
-          <img src={SDClogo} alt="SDC logo" className="sdc-logo" />
+        <a
+          className="link"
+          href="https://sdc.am/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <small className="fz14 fw600 c-black300">{t("powered-by")}</small>
         </a>
       </div>

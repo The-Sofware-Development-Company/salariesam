@@ -15,7 +15,6 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          {/* <img src={SDClogo} alt="SDC logo" className="sdc-logo" /> */}
           <small className="fz14 fw600 c-black300">{t("powered-by")}</small>
         </a>
       </div>

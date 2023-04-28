@@ -171,6 +171,9 @@ form {
 // Mailchimp overrides
 #mc_embed_signup {
   margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 #mc_embed_signup .helper_text {
@@ -178,17 +181,24 @@ form {
 }
 
 #mc_embed_signup form {
-  padding: 20px 20px 20px 0;
+  padding: 20px;
   margin: 0;
-  max-width: 550px;
+  max-width: 900px;
 }
 
 #mc_embed_signup h2 {
   margin: 0 0 20px 0;
   line-height: 1.3;
+  text-align: center;
+
   @media only screen and (max-width: 550px) {
     font-size: 18px;
   }
+}
+
+#mc_embed_signup .indicates-required {
+  margin: 0;
+  max-width: 800px;
 }
 
 #mc_embed_signup .mc-field-group label {
